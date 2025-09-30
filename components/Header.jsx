@@ -79,7 +79,7 @@ export default function Header() {
           {/* CTA Button */}
           <div className="hidden lg:flex items-center space-x-2">
             <a href="#contato" className="text-foreground/80 hover:text-nexus-primary transition-colors duration-300 font-medium px-3 py-2 rounded-lg hover:bg-nexus-primary/5 text-xs xl:text-sm">
-              Seja um fornecedor Parceiro
+              Área fornecedor
             </a>
             <a href="#contato" className="bg-gradient-to-r from-nexus-primary to-nexus-accent text-white font-semibold px-3 xl:px-4 py-2 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-xs xl:text-sm">
               Contato
