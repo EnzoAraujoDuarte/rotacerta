@@ -37,9 +37,9 @@ export default function Hero() {
 
           {/* Subtitle */}
           <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-white/90 max-w-2xl mx-auto leading-relaxed px-4">
-            A Rota Certa Logtech é líder em soluções de entrega urbana para e-commerce, 
-            oferecendo tecnologia de ponta com IA, integração SAP S/4HANA e Shopify para 
-            entregas rápidas, precisas e totalmente rastreáveis em tempo real.
+            Empresa de pequeno a médio porte especializada em logística urbana de last-mile 
+            para e-commerce, conectando lojas virtuais aos consumidores finais com entregas 
+            rápidas, precisas e totalmente rastreáveis em tempo real.
           </p>
 
           {/* Stats */}
@@ -49,16 +49,16 @@ export default function Hero() {
               <div className="text-xs sm:text-sm text-white/80">Profissionais Especializados</div>
             </div>
             <div className="text-center min-w-[80px]">
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-nexus-accent">50</div>
+              <div className="text-xs sm:text-sm text-white/80">Entregadores</div>
+            </div>
+            <div className="text-center min-w-[80px]">
               <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-nexus-accent">5</div>
-              <div className="text-xs sm:text-sm text-white/80">Capitais em Operação</div>
+              <div className="text-xs sm:text-sm text-white/80">Departamentos</div>
             </div>
             <div className="text-center min-w-[80px]">
-              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-nexus-accent">15K+</div>
-              <div className="text-xs sm:text-sm text-white/80">Entregas/Mês</div>
-            </div>
-            <div className="text-center min-w-[80px]">
-              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-nexus-accent">98%</div>
-              <div className="text-xs sm:text-sm text-white/80">SLA de Entrega</div>
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-nexus-accent">15</div>
+              <div className="text-xs sm:text-sm text-white/80">Op. e Planejamento</div>
             </div>
           </div>
 
