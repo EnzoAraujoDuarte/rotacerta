@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Rota Certa Logtech Design System - Modern tech company aesthetics with brand-inspired gradients */
+
+@layer base {
+  :root {
+    /* Core brand colors inspired by Rota Certa Logtech */
+    --nexus-primary: 195 100% 50%; /* Bright cyan */
+    --nexus-secondary: 210 100% 30%; /* Deep blue */
+    --nexus-accent: 185 100% 60%; /* Light turquoise */
+    --nexus-dark: 220 50% 15%; /* Dark navy */
+    
+    /* Background system */
+    --background: 0 0% 100%;
+    --background-secondary: 210 20% 98%;
+    --foreground: 220 50% 15%;
+
+    /* Card system */
+    --card: 0 0% 100%;
+    --card-foreground: 220 50% 15%;
+    --card-hover: 210 20% 98%;
+
+    /* Interactive elements */
+    --primary: 195 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 195 100% 45%;
+
+    --secondary: 210 100% 30%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-hover: 210 100% 25%;
+
+    /* Muted elements */
+    --muted: 210 20% 95%;
+    --muted-foreground: 220 30% 40%;
+
+    /* Accent colors */
+    --accent: 185 100% 60%;
+    --accent-foreground: 220 50% 15%;
+
+    /* States */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 20% 90%;
+    --input: 220 20% 95%;
+    --ring: 195 100% 50%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--nexus-primary)), hsl(var(--nexus-accent)));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--nexus-secondary)), hsl(var(--nexus-dark)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--nexus-secondary)), hsl(var(--nexus-primary)));
+    --gradient-section: linear-gradient(180deg, hsl(var(--background)), hsl(var(--background-secondary)));
+
+    /* Shadows */
+    --shadow-card: 0 4px 20px -2px hsl(var(--nexus-primary) / 0.1);
+    --shadow-button: 0 4px 15px -3px hsl(var(--nexus-primary) / 0.3);
+    --shadow-hero: 0 20px 60px -15px hsl(var(--nexus-secondary) / 0.4);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 50% 8%;
+    --background-secondary: 220 50% 10%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 50% 10%;
+    --card-foreground: 210 40% 98%;
+    --card-hover: 220 50% 12%;
+
+    --primary: 195 100% 50%;
+    --primary-foreground: 220 50% 8%;
+    --primary-hover: 195 100% 55%;
+
+    --secondary: 210 100% 30%;
+    --secondary-foreground: 210 40% 98%;
+    --secondary-hover: 210 100% 35%;
+
+    --muted: 220 50% 15%;
+    --muted-foreground: 220 30% 60%;
+
+    --accent: 185 100% 60%;
+    --accent-foreground: 220 50% 8%;
+
+    --border: 220 50% 20%;
+    --input: 220 50% 15%;
+    --ring: 195 100% 50%;
+
+    /* Dark mode gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--nexus-primary)), hsl(var(--nexus-accent)));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--nexus-secondary)), hsl(var(--nexus-primary)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--nexus-dark)), hsl(var(--nexus-secondary)));
+    --gradient-section: linear-gradient(180deg, hsl(var(--background)), hsl(var(--background-secondary)));
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Button variants */
+  .btn-hero {
+    @apply bg-gradient-to-r from-nexus-primary to-nexus-accent text-white font-semibold px-8 py-4 rounded-lg shadow-button hover:shadow-lg transform hover:scale-105 transition-all duration-300;
+  }
+  
+  .btn-secondary {
+    @apply bg-gradient-to-r from-nexus-secondary to-nexus-dark text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-nexus-primary text-nexus-primary bg-transparent font-semibold px-6 py-3 rounded-lg hover:bg-nexus-primary hover:text-white transition-all duration-300;
+  }
+
+  /* Card variants */
+  .card-hover {
+    @apply bg-card border border-border rounded-xl p-6 shadow-card hover:shadow-lg hover:bg-card-hover transform hover:-translate-y-1 transition-all duration-300;
+  }
+
+  /* Section backgrounds */
+  .section-gradient {
+    @apply bg-gradient-to-b from-background to-background-secondary;
+  }
+
+  /* Hero section */
+  .hero-gradient {
+    @apply bg-gradient-to-br from-nexus-secondary via-nexus-primary to-nexus-accent;
+  }
+
+  /* Text gradients */
+  .text-gradient {
+    @apply bg-gradient-to-r from-nexus-primary to-nexus-accent bg-clip-text text-transparent;
+  }
+
+  /* Animations */
+  .fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  .slide-in-right {
+    animation: slideInRight 0.8s ease-out forwards;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* Hover effects */
+  .hover-lift {
+    @apply transform hover:-translate-y-2 transition-transform duration-300;
+  }
+
+  .hover-glow {
+    @apply hover:shadow-2xl hover:shadow-nexus-primary/20 transition-shadow duration-300;
+  }
+
+  /* Shadow effects */
+  .shadow-glow {
+    @apply shadow-lg;
+    box-shadow: 0 10px 40px -10px hsl(var(--nexus-primary) / 0.2);
+  }
+
+  /* Mobile optimizations */
+  @media (max-width: 768px) {
+    .card-hover {
+      @apply p-4;
+    }
+    
+    .hover-lift {
+      @apply hover:-translate-y-1;
+    }
+  }
+
+  /* Responsive text */
+  .text-responsive-xl {
+    @apply text-2xl md:text-3xl lg:text-4xl;
+  }
+
+  .text-responsive-lg {
+    @apply text-xl md:text-2xl lg:text-3xl;
+  }
+
+  .text-responsive-base {
+    @apply text-sm md:text-base lg:text-lg;
+  }
+}
