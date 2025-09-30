@@ -29,9 +29,9 @@ export default function Hero() {
 
           {/* Main Heading */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 leading-tight px-4">
-            Revolucionando a Logística de
+            Revolucionando a Logística
             <span className="block bg-gradient-to-r from-white via-nexus-accent to-white bg-clip-text text-transparent mt-2">
-              Última Milha no Brasil
+              no Brasil
             </span>
           </h1>
 
