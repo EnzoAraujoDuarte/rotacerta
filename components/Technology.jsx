@@ -1,121 +1,121 @@
-import { Cloud, Shield, Zap, Database, Smartphone, MapPin, Camera, Phone, Lock, Monitor, Server } from 'lucide-react';
+import { Cloud, Shield, Zap, Database, Smartphone, MapPin, Camera, Phone, Lock, Monitor, Server, BarChart3 } from 'lucide-react';
 
 export default function Technology() {
-  const tmsSystems = [
+  const softwareSolutions = [
     {
       icon: MapPin,
-      title: 'TMS - drivin ou Lincros (Cloud SaaS)',
-      description: 'Sistema de Gerenciamento de Transporte (TMS) com roteirização automática por IA/ML que analisa histórico de 6 meses, trânsito em tempo real (integração Waze/Google Maps), prioridades de SLA e capacidade de 50 veículos para gerar rotas otimizadas dinamicamente.',
-      features: ['Roteirização IA com 35% economia combustível', 'Otimização dinâmica a cada 15min (trânsito)', 'Monitoramento GPS em tempo real (3 em 3 min)', 'Gestão de janelas de entrega e SLA'],
-      recommended: 'Drivin e Lincros são líderes brasileiros em TMS para last-mile, com comprovados cases de economia de 30-40% em custos operacionais e aumento de 40-50% na produtividade'
-    },
-    {
-      icon: Smartphone,
-      title: 'App do Entregador (Android Nativo)',
-      description: 'Aplicativo mobile Android nativo com interface intuitiva que digitaliza completamente o processo de entrega: scan de código de barras, navegação turn-by-turn integrada (Waze), comprovação digital com foto geo-localizada + assinatura na tela, e chat centralizado para comunicação de ocorrências.',
-      features: ['POD digital: foto + assinatura + coordenadas GPS', 'Comunicação in-app (substitui WhatsApp)', 'Registro estruturado de ocorrências (8 tipos)', 'Navegação integrada Waze/Google Maps'],
-      recommended: 'Eliminou 100% dos canhotos de papel (antes 15% de perda mensal), acelerou ciclo de faturamento de 15 para 2 dias, e aumentou produtividade em 45% ao eliminar tarefas administrativas manuais'
+      title: 'Oracle Fusion Cloud SCM (Módulo de Logística)',
+      description: 'Plataforma líder global em Supply Chain que oferece módulos de IA/ML para otimização e previsão. Sua robustez e capacidade de integração via APIs a tornam a escolha ideal para uma empresa que planeja atender grandes clientes corporativos e escalar suas operações sem gargalos.',
+      features: ['Roteirização com IA/ML para otimização', 'Previsão de demanda inteligente', 'Gestão de pátio e execução logística', 'APIs robustas para integração corporativa'],
+      recommended: 'Plataforma de Execução Logística (LEP) que automatiza roteirização, oferece previsão de demanda e possui ecossistema de APIs para conexão com sistemas de grandes clientes'
     },
     {
       icon: Database,
-      title: 'Dashboard de Gestão (Web Responsivo)',
-      description: 'Painel gerencial web responsivo (desktop/tablet) com mais de 40 KPIs em tempo real sincronizados com SAP S/4HANA: taxa de entrega, tempo médio de rota, custo por entrega, produtividade por entregador, SLA, NPS, e heatmaps de ocorrências. Com drill-down para análise granular e exportação para Excel/PDF.',
-      features: ['40+ KPIs atualizados em tempo real (5 em 5 min)', 'Integração bidirecional SAP S/4HANA (API REST)', 'Análise de custos: R$/entrega, R$/km, R$/hora', 'Relatórios automáticos diários/semanais/mensais'],
-      recommended: 'Proporcionou visibilidade 360° da operação que antes não existia. Gestores conseguem identificar gargalos, entregadores improdutivos e oportunidades de otimização em tempo real, resultando em decisões data-driven que aumentaram margem EBITDA em 12 pontos percentuais'
+      title: 'Snowflake - Data Warehouse',
+      description: 'Plataforma de dados em nuvem de referência no mercado, projetada para performance e escalabilidade quase infinitas. Servirá como o data warehouse central, ingerindo dados do Oracle SCM, Salesforce e outras fontes para prover uma visão unificada do negócio.',
+      features: ['Repositório central unificando logística, vendas e finanças', 'Performance e escalabilidade infinitas', 'Análises preditivas e insights de rentabilidade', 'Single Source of Truth para toda empresa'],
+      recommended: 'Plataforma Centralizada de Dados e Analytics que unifica informações e permite análises preditivas sobre rentabilidade e eficiência'
+    },
+    {
+      icon: BarChart3,
+      title: 'Tableau - Business Intelligence',
+      description: 'Líder no quadrante mágico do Gartner, o Tableau se conectará ao Snowflake para transformar dados brutos em dashboards interativos e análises visuais poderosas, permitindo que a gestão tome decisões estratégicas com base em inteligência de dados.',
+      features: ['Dashboards interativos e análises visuais', 'Conexão nativa com Snowflake', 'Transformação de dados em insights estratégicos', 'Decisões baseadas em inteligência de dados'],
+      recommended: 'Ferramenta de BI líder de mercado para visualização de dados e análises avançadas'
     },
     {
       icon: Camera,
-      title: 'Portal do Cliente + Tracking Público',
-      description: 'Portal web white-label para clientes B2B (lojas de e-commerce) com dashboard de pedidos, SLA, e custos. Página de tracking público para consumidores finais com mapa em tempo real, ETA dinâmico (atualizado a cada 5 min), e notificações proativas via SMS/WhatsApp. Integração via Webhook/API REST com Shopify, VTEX e WooCommerce.',
-      features: ['Tracking público: mapa tempo real + ETA dinâmico', 'Notificações proativas (SMS/WhatsApp/Email)', 'Histórico completo: 12 meses de entregas', 'API REST para integração com qualquer e-commerce'],
-      recommended: 'Reduziu ligações ao SAC em 72% (de 280 para 78 chamadas/dia), aumentou NPS de 45 para 87 pontos, e se tornou diferencial competitivo chave que conquistou 8 grandes clientes de e-commerce no último ano'
+      title: 'Salesforce Sales Cloud - CRM',
+      description: 'Como plataforma de CRM nº 1 do mundo, o Salesforce oferece a escalabilidade, o ecossistema e as automações necessárias para gerenciar um processo de vendas B2B complexo e garantir a excelência no relacionamento com os clientes.',
+      features: ['Gestão completa do ciclo de vida B2B', 'Automações avançadas de vendas', 'Visão 360º dos clientes', 'Integração com ecossistema de dados'],
+      recommended: 'Plataforma de Gestão do Engajamento de Clientes Enterprise desde prospecção até gestão de contratos e suporte pós-venda'
     }
   ];
 
-  const itilPractices = [
+  const infrastructure = [
     {
-      practice: 'Gestão de Incidentes',
-      description: 'Processo estruturado para resolver problemas como "aplicativo do motorista travou"',
-      benefit: 'Resolução rápida e documentada'
+      service: 'Arquitetura Multi-Cloud',
+      description: 'Utilização da Oracle Cloud Infrastructure (OCI) para o SCM e AWS para hospedar a plataforma de dados Snowflake e desenvolver possíveis aplicações customizadas, garantindo que cada sistema rode em seu ambiente otimizado.',
+      benefit: 'Máxima performance, resiliência e evita dependência de fornecedor único (vendor lock-in)'
     },
     {
-      practice: 'Gestão de Mudanças',
-      description: 'Controle de atualizações no TMS e aplicativos com testes e rollback',
-      benefit: 'Estabilidade e confiabilidade'
+      service: 'Microsoft Intune - UEM',
+      description: 'Solução líder em Gerenciamento Unificado de Endpoints que permite a aplicação de políticas de segurança de alto nível, garantindo o controle e a proteção dos dados da empresa nos dispositivos móveis.',
+      benefit: 'Gestão e segurança unificada de endpoints móveis com políticas robustas'
     },
     {
-      practice: 'Gestão de Configuração',
-      description: 'Inventário de smartphones corporativos, planos de dados e dispositivos',
-      benefit: 'Controle de ativos de TI'
+      service: 'Datadog - SIEM',
+      description: 'Sistema de monitoramento de segurança em tempo real (SIEM) que monitora e alerta sobre qualquer atividade suspeita em todo o ecossistema de nuvem.',
+      benefit: 'Monitoramento proativo de segurança com alertas em tempo real'
     },
     {
-      practice: 'Service Desk',
-      description: 'Suporte técnico 24/7 para entregadores e equipe operacional',
-      benefit: 'Suporte contínuo e eficiente'
-    }
-  ];
-
-  const saasAdvantages = [
-    {
-      service: 'Zero Servidores Locais (Cloud-First)',
-      description: 'Toda infraestrutura tecnológica (TMS, banco de dados, APIs, dashboards) hospedada na nuvem AWS/Azure pelo fornecedor, com redundância geográfica e alta disponibilidade garantida por SLA de 99.95%',
-      benefit: 'Zero CAPEX em hardware de TI, apenas OPEX mensal previsível'
-    },
-    {
-      service: 'Atualizações Automáticas e Contínuas',
-      description: 'Releases quinzenais de novas funcionalidades, correções de bugs e melhorias de performance aplicadas automaticamente durante madrugadas, sem janelas de manutenção ou interrupção do serviço',
-      benefit: 'Sempre na última versão com zero intervenção da equipe interna'
-    },
-    {
-      service: 'Escalabilidade Elástica e Instantânea',
-      description: 'Infraestrutura dimensiona automaticamente conforme demanda (Black Friday, Natal). De 50 para 150 entregadores sem necessidade de provisionamento prévio ou alteração de contrato',
-      benefit: 'Modelo pay-per-use: pague apenas pelos usuários ativos mensalmente'
-    },
-    {
-      service: 'Backup Automático e Disaster Recovery',
-      description: 'Backup incremental a cada 4 horas, replicação síncrona em 3 zonas de disponibilidade AWS, RPO de 4h e RTO de 1h em caso de falha catastrófica. Testes de DR trimestrais',
-      benefit: 'SLA de 99.95% de disponibilidade garantido contratualmente'
+      service: 'Okta - Identity Management',
+      description: 'Plataforma de Gestão de Identidade que centraliza e protege o acesso dos funcionários a todas as plataformas através de Single Sign-On (SSO).',
+      benefit: 'Controle centralizado de acesso com SSO e princípio do menor privilégio'
     }
   ];
 
   const mobileInfrastructure = [
     {
       icon: Phone,
-      title: 'Smartphones Corporativos Robustos',
-      description: 'Dispositivos profissionais Samsung Galaxy XCover Pro ou Motorola Defy (IP68, MIL-STD-810H) preparados para uso intensivo em campo com quedas, água e temperatura extrema',
-      specs: ['Certificação IP68 (água/poeira)', 'Bateria 5000mAh (2 dias de autonomia)', 'GPS multi-constelação (precisão 3m)', 'Tela 6.3" legível sob sol direto']
+      title: 'Smartphones Corporativos',
+      description: 'Aquisição de 80 smartphones corporativos para toda equipe com planos de dados móveis para conectividade contínua',
+      specs: ['80 aparelhos corporativos', 'Conectividade 4G/5G', 'GPS de alta precisão', 'Aplicativos corporativos']
     },
     {
       icon: Zap,
-      title: 'Conectividade 4G/5G Corporativa',
-      description: 'Planos corporativos Vivo/Claro M2M (Machine-to-Machine) com dados ilimitados, IP fixo, APN dedicada e prioridade de rede para garantir transmissão contínua de GPS e fotos',
-      specs: ['Cobertura 4G/5G em 5 capitais + região metropolitana', 'Dados ilimitados (fair use 100GB/linha)', 'Prioridade QoS em horário comercial', 'NOC 24x7 com SLA de 4h']
+      title: 'Planos de Dados Móveis',
+      description: 'Planos corporativos com dados ilimitados para garantir transmissão contínua de GPS, fotos e dados críticos',
+      specs: ['80 linhas corporativas', 'Dados ilimitados', 'Cobertura nacional', 'Prioridade de rede']
     },
     {
       icon: Lock,
-      title: 'MDM - Mobile Device Management',
-      description: 'Plataforma VMware Workspace ONE ou Microsoft Intune para gestão centralizada de 50 smartphones, permitindo instalação remota, políticas de segurança, wipe em caso de roubo e inventário de ativos',
-      specs: ['Deploy remoto de apps (OTA)', 'Wipe/lock remoto em caso de perda/roubo', 'Políticas: senha obrigatória, criptografia', 'Dashboard de inventário e health de dispositivos']
+      title: 'Microsoft Intune - MDM',
+      description: 'Plataforma de gerenciamento unificado de endpoints que permite gestão centralizada, políticas de segurança e proteção contra vazamento de dados',
+      specs: ['Gestão remota de dispositivos', 'Políticas de segurança corporativa', 'Separação dados corporativos/pessoais', 'Wipe remoto em caso de perda']
+    }
+  ];
+
+  const governancePractices = [
+    {
+      practice: 'ITIL 4 via Jira Service Management',
+      description: 'Gestão profissional de serviços de TI com processo claro e auditável para suporte tecnológico',
+      benefit: 'Gestão de incidentes, requisições e mudanças estruturada'
+    },
+    {
+      practice: 'ISO/IEC 27001',
+      description: 'Conformidade contínua utilizando ferramentas nativas de segurança dos provedores de nuvem',
+      benefit: 'Monitoramento e relatórios de aderência às políticas de segurança'
+    },
+    {
+      practice: 'LGPD Compliance',
+      description: 'Conformidade automatizada com classificação de dados, gestão de consentimento e geração de evidências',
+      benefit: 'Processo contínuo e automatizado de conformidade com LGPD'
+    },
+    {
+      practice: 'Controle de Acesso RBAC/ABAC',
+      description: 'Sistema granular de controle de acesso baseado em papel, departamento e contexto',
+      benefit: 'Segurança máxima com permissões contextuais e auditáveis'
     }
   ];
 
   const securityPractices = [
     {
       icon: Shield,
-      title: 'Autenticação Segura',
-      description: 'Login com credenciais únicas e senha forte para cada entregador',
-      implementation: 'Integrado no app do entregador'
+      title: 'Monitoramento 24/7',
+      description: 'SIEM com Datadog monitora continuamente todo ambiente',
+      implementation: 'Alertas em tempo real de atividades suspeitas'
     },
     {
       icon: Lock,
-      title: 'Criptografia de Dados',
-      description: 'Todos os dados transmitidos e armazenados são criptografados',
-      implementation: 'TLS 1.3 e criptografia em repouso'
+      title: 'Single Sign-On',
+      description: 'Okta centraliza acesso a todas plataformas',
+      implementation: 'SSO com autenticação multifator'
     },
     {
       icon: Monitor,
-      title: 'Auditoria e Compliance',
-      description: 'Logs de acesso e conformidade com LGPD',
+      title: 'Compliance Automatizado',
+      description: 'Conformidade com ISO 27001 e LGPD',
       implementation: 'Relatórios automáticos de auditoria'
     }
   ];
@@ -126,21 +126,21 @@ export default function Technology() {
         {/* Header */}
         <div className="text-center mb-16 fade-in-up">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Soluções de <span className="text-gradient">Tecnologia</span>
+            Proposta de <span className="text-gradient">Solução Tecnológica</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Soluções tecnológicas avançadas para transformação digital da logística urbana, 
-            com infraestrutura 100% Cloud SaaS.
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Plano de implementação tecnológica enterprise projetado para resolver os desafios 
+            de forma integrada e escalável, com foco em grandes clientes corporativos.
           </p>
         </div>
 
-        {/* TMS Solutions */}
+        {/* Software Solutions */}
         <div className="mb-20">
           <h3 className="text-2xl font-bold text-center mb-12 text-foreground">
-            Plataforma TMS Proposta
+            Softwares Recomendados
           </h3>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {tmsSystems.map((system, index) => {
+            {softwareSolutions.map((system, index) => {
               const SystemIcon = system.icon;
               return (
                 <div key={index} className="card-hover hover-lift">
@@ -150,7 +150,7 @@ export default function Technology() {
                     </div>
                     <div>
                       <h4 className="text-xl font-bold text-foreground mb-2">{system.title}</h4>
-                      <p className="text-muted-foreground leading-relaxed">{system.description}</p>
+                      <p className="text-muted-foreground leading-relaxed text-sm">{system.description}</p>
                     </div>
                   </div>
                   
@@ -164,7 +164,7 @@ export default function Technology() {
                   </div>
 
                   <div className="p-4 bg-nexus-primary/5 border border-nexus-primary/20 rounded-lg">
-                    <p className="text-sm text-nexus-primary font-semibold mb-1">Benefício:</p>
+                    <p className="text-sm text-nexus-primary font-semibold mb-1">Motivo:</p>
                     <p className="text-sm text-muted-foreground">{system.recommended}</p>
                   </div>
                 </div>
@@ -179,20 +179,20 @@ export default function Technology() {
             <div className="w-16 h-16 bg-gradient-to-r from-nexus-primary to-nexus-accent rounded-xl flex items-center justify-center mx-auto mb-6">
               <Cloud className="w-8 h-8 text-white" />
             </div>
-            <h3 className="text-2xl font-bold mb-4 text-foreground">Infraestrutura Cloud SaaS</h3>
+            <h3 className="text-2xl font-bold mb-4 text-foreground">Infraestrutura Sugerida</h3>
             <p className="text-base text-muted-foreground max-w-2xl mx-auto">
-              Modelo 100% Cloud SaaS eliminando necessidade de servidores locais, data centers próprios ou equipe de infraestrutura de TI
+              Arquitetura Multi-Cloud com Oracle Cloud Infrastructure e AWS para máxima performance e resiliência
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            {saasAdvantages.map((service, index) => (
+            {infrastructure.map((service, index) => (
               <div key={index} className="card-hover hover-lift">
                 <div className="flex items-start space-x-4">
                   <div className="w-3 h-3 bg-nexus-primary rounded-full mt-2 flex-shrink-0"></div>
                   <div>
                     <h4 className="text-lg font-bold text-foreground mb-2">{service.service}</h4>
-                    <p className="text-muted-foreground mb-3">{service.description}</p>
+                    <p className="text-muted-foreground mb-3 text-sm">{service.description}</p>
                     <div className="p-3 bg-nexus-primary/5 rounded-lg">
                       <p className="text-sm text-nexus-primary font-semibold">Benefício:</p>
                       <p className="text-sm text-muted-foreground">{service.benefit}</p>
@@ -231,13 +231,13 @@ export default function Technology() {
           </div>
         </div>
 
-        {/* ITIL Practices */}
+        {/* Governance Practices */}
         <div className="mb-20">
           <h3 className="text-2xl font-bold text-center mb-12 text-foreground">
-            Gestão e Governança ITIL
+            Modelo de Gestão e Governança
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {itilPractices.map((item, index) => (
+            {governancePractices.map((item, index) => (
               <div key={index} className="card-hover hover-lift">
                 <div className="flex items-start space-x-4">
                   <div className="w-3 h-3 bg-nexus-secondary rounded-full mt-2 flex-shrink-0"></div>
@@ -259,10 +259,10 @@ export default function Technology() {
         <div className="bg-card rounded-2xl p-8 shadow-card">
           <div className="text-center mb-8">
             <h3 className="text-2xl font-bold text-foreground mb-4">
-              Segurança e Compliance
+              Segurança da Informação
             </h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Práticas de segurança para proteger dados e garantir conformidade com LGPD
+              Implementação de SIEM com Datadog e gestão de identidade com Okta para postura de segurança proativa
             </p>
           </div>
           

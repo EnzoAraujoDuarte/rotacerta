@@ -4,48 +4,48 @@ export default function Services() {
   const currentProblems = [
     {
       icon: AlertTriangle,
-      title: 'Roteirização Manual Ineficiente',
-      description: 'Antes da implementação do TMS, o planejamento de rotas era feito manualmente em planilhas Excel, resultando em trajetos sub-otimizados, alto consumo de combustível (até 40% superior ao ideal) e atrasos frequentes nas entregas por não considerar trânsito em tempo real.',
-      impact: ['Custos 40% maiores com combustível', 'Perda de 30% da produtividade', 'SLA de entrega abaixo de 75%']
+      title: 'Ineficiência e Alto Custo Operacional',
+      description: 'A roteirização das entregas é feita de forma manual em planilhas, um processo lento, sujeito a erros e que não considera variáveis em tempo real, como o trânsito. Isso resulta em rotas mais longas, maior consumo de combustível e pagamento excessivo de horas extras.',
+      impact: ['Rotas sub-otimizadas e mais longas', 'Maior consumo de combustível', 'Pagamento excessivo de horas extras']
     },
     {
       icon: MapPin,
-      title: 'Ausência de Rastreamento em Tempo Real',
-      description: 'Sem sistema de GPS integrado, nem clientes nem gestores sabiam a localização precisa dos entregadores. Isso gerava ansiedade nos consumidores finais e sobrecarga massiva no SAC com ligações constantes questionando o status das entregas.',
-      impact: ['Mais de 200 ligações/dia perguntando "onde está?"', 'NPS baixo (45) por falta de transparência', 'Equipe de atendimento 3x maior que necessário']
+      title: 'Falta de Visibilidade e Rastreabilidade',
+      description: 'Nossos clientes e seus consumidores finais não possuem um sistema para rastrear a entrega em tempo real. Isso sobrecarrega nossa equipe de atendimento com ligações e e-mails perguntando sobre o status dos pedidos, gerando uma experiência negativa.',
+      impact: ['Sobrecarga no atendimento com ligações', 'Consumidores sem informação de status', 'Experiência negativa do cliente']
     },
     {
       icon: FileText,
-      title: 'Comprovação Manual em Papel',
-      description: 'As provas de entrega eram feitas com canhotos de papel físico assinados pelo cliente. Esses documentos frequentemente eram perdidos, danificados por chuva ou ilegíveis, atrasando o ciclo de faturamento em até 15 dias e gerando disputas sem evidências fotográficas.',
-      impact: ['15% de canhotos perdidos mensalmente', 'Ciclo de faturamento de 12-15 dias', 'Disputas sem evidência documental confiável']
+      title: 'Processo de Comprovação de Entrega Arcaico',
+      description: 'A confirmação da entrega é realizada através de canhotos de papel assinados. Este método leva à perda de documentos, atrasos no faturamento (pois é preciso esperar o canhoto físico chegar) e dificuldades na resolução de disputas.',
+      impact: ['Perda frequente de documentos', 'Atrasos no faturamento', 'Dificuldades na resolução de disputas']
     },
     {
       icon: MessageSquare,
-      title: 'Comunicação Fragmentada e Caótica',
-      description: 'Toda comunicação com a frota era via WhatsApp pessoal dos supervisores, criando múltiplos grupos desorganizados. Não havia registro centralizado de ocorrências (ausências, endereços errados, recusas), tornando impossível análises históricas e melhorias de processo.',
-      impact: ['Zero histórico estruturado de ocorrências', 'Supervisores gastando 4h/dia apenas em WhatsApp', 'Impossibilidade de análise de padrões e KPIs']
+      title: 'Comunicação Desestruturada',
+      description: 'Toda a comunicação com os entregadores na rua é feita por grupos de WhatsApp, tornando o registro de ocorrências (endereço não localizado, cliente ausente) descentralizado, informal e difícil de auditar.',
+      impact: ['Comunicação descentralizada', 'Registro informal de ocorrências', 'Difícil auditoria e controle']
     }
   ];
 
   const services = [
     {
       icon: Package,
-      title: 'Coleta e Entrega Last-Mile B2C',
-      description: 'Serviço core de coleta em centros de distribuição dos clientes de e-commerce (integração via API com Shopify, VTEX, WooCommerce) e entrega door-to-door para o consumidor final com janelas de tempo flexíveis e rastreamento completo.',
-      features: ['Coleta agendada com 4h de antecedência', 'Entrega D+1 ou same-day (capital)', 'Cobertura em 5 capitais + região metropolitana']
+      title: 'Coleta e Entrega Last-Mile',
+      description: 'Serviço principal de coleta de pacotes nos centros de distribuição de clientes (lojas virtuais) e realização da entrega rápida e eficiente ao consumidor final em grandes capitais.',
+      features: ['Coleta em centros de distribuição', 'Entrega door-to-door ao consumidor', 'Cobertura em grandes capitais']
     },
     {
       icon: Clock,
-      title: 'Entregas Expressas Same-Day',
-      description: 'Serviço premium de entrega ultrarrápida para pedidos urgentes de e-commerce, com coleta imediata e janelas de entrega de 2-3 horas garantidas por SLA. Ideal para produtos de alto valor, medicamentos ou presentes de última hora.',
-      features: ['Janelas de 2-3 horas com 98% precisão', 'Coleta em até 1 hora após pedido', 'SLA garantido com multa contratual']
+      title: 'Entregas Rápidas',
+      description: 'Foco em entregas rápidas e eficientes para o setor de e-commerce, garantindo que os produtos cheguem aos consumidores finais no menor tempo possível.',
+      features: ['Entregas ágeis e eficientes', 'Foco no setor de e-commerce', 'Prioridade no prazo']
     },
     {
       icon: CheckCircle,
-      title: 'Gestão Inteligente de Ocorrências',
-      description: 'Plataforma completa para gerenciar todas as exceções logísticas: ausências do destinatário, endereços incorretos, recusas e devoluções. Com machine learning que prevê padrões de ausência e sugere melhores horários para re-entrega.',
-      features: ['Registro fotográfico geo-localizado', 'Reagendamento automático via SMS/WhatsApp', 'IA prevê melhor janela de re-entrega']
+      title: 'Gestão de Entregas',
+      description: 'Gerenciamento completo do processo de entrega, desde a coleta até a confirmação de recebimento pelo consumidor final.',
+      features: ['Gestão de rotas', 'Acompanhamento de entregas', 'Confirmação de recebimento']
     }
   ];
 
@@ -58,10 +58,9 @@ export default function Services() {
             Nossos <span className="text-gradient">Serviços</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            A Rota Certa Logtech oferece um portfólio completo de soluções de entrega urbana 
-            para e-commerce B2C, desde coletas agendadas até entregas expressas same-day. 
-            Nossa infraestrutura tecnológica com roteirização por IA e rastreamento em tempo real 
-            garante eficiência máxima, redução de custos e experiência superior para o consumidor final.
+            A Rota Certa Logtech é uma empresa de logística focada no serviço de last-mile, 
+            a etapa final e mais crítica da entrega para o setor de e-commerce. 
+            Atuamos em grandes capitais conectando lojas virtuais aos seus consumidores finais.
           </p>
         </div>
 
@@ -69,15 +68,15 @@ export default function Services() {
         <div className="mb-20">
           <div className="text-center mb-12">
             <div className="inline-block px-6 py-2 bg-destructive/10 border border-destructive/30 rounded-full mb-6">
-              <span className="text-destructive font-semibold text-sm">⚠️ ANTES DA TRANSFORMAÇÃO DIGITAL</span>
+              <span className="text-destructive font-semibold text-sm">⚠️ DESAFIOS ATUAIS</span>
             </div>
             <h3 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">
-              Problemas <span className="text-destructive">Críticos</span> Enfrentados
+              Problemas ou Desafios <span className="text-destructive">Enfrentados Atualmente</span>
             </h3>
             <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Antes de implementar nossa solução tecnológica com TMS, enfrentávamos sérios desafios 
-              operacionais que impactavam drasticamente nossos custos, produtividade e satisfação dos clientes. 
-              Estes problemas eram o dia a dia da operação logística tradicional:
+              A empresa enfrenta sérios desafios operacionais que impactam custos, produtividade 
+              e satisfação dos clientes. Estes problemas precisam ser resolvidos através da 
+              implementação de soluções tecnológicas adequadas:
             </p>
           </div>
 
@@ -115,12 +114,12 @@ export default function Services() {
           
           {/* Transition Section */}
           <div className="mt-12 text-center">
-            <div className="inline-block px-8 py-4 bg-gradient-to-r from-green-500/10 to-green-600/10 border-2 border-green-500/30 rounded-xl">
+            <div className="inline-block px-8 py-4 bg-gradient-to-r from-blue-500/10 to-blue-600/10 border-2 border-blue-500/30 rounded-xl">
               <p className="text-sm md:text-base text-foreground font-semibold mb-2">
-                ✅ <span className="text-green-600">SOLUÇÃO IMPLEMENTADA COM SUCESSO</span>
+                💡 <span className="text-blue-600">PROPOSTA DE SOLUÇÃO</span>
               </p>
               <p className="text-xs md:text-sm text-muted-foreground">
-                Todos estes problemas foram eliminados com a implementação do TMS drivin/Lincros
+                Apresentamos um plano de implementação tecnológica para resolver estes desafios
               </p>
             </div>
           </div>
@@ -130,15 +129,14 @@ export default function Services() {
         <div>
           <div className="text-center mb-12">
             <div className="inline-block px-6 py-2 bg-nexus-primary/10 border border-nexus-primary/30 rounded-full mb-6">
-              <span className="text-nexus-primary font-semibold text-sm">🚀 APÓS A TRANSFORMAÇÃO DIGITAL</span>
+              <span className="text-nexus-primary font-semibold text-sm">📦 SERVIÇOS OFERECIDOS</span>
             </div>
             <h3 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">
-              Soluções <span className="text-nexus-primary">Tecnológicas</span> Implementadas
+              Principais Produtos ou <span className="text-nexus-primary">Serviços</span> Oferecidos
             </h3>
             <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Com o TMS drivin/Lincros, oferecemos serviços de logística urbana de última milha 
-              totalmente digitalizados, com eficiência operacional, rastreamento em tempo real e 
-              experiência premium para o consumidor final
+              O serviço principal é a coleta de pacotes nos centros de distribuição de nossos clientes 
+              (lojas virtuais) e a realização da entrega rápida e eficiente ao consumidor final
             </p>
           </div>
 
@@ -176,8 +174,8 @@ export default function Services() {
               Pronto para transformar suas entregas?
             </h3>
             <p className="text-sm md:text-lg mb-6 text-white/90 max-w-2xl mx-auto leading-relaxed px-4">
-              Descubra como nossa solução tecnológica pode revolucionar sua operação logística, 
-              eliminar problemas críticos e reduzir custos operacionais em até 35%.
+              Descubra como a transformação digital pode revolucionar sua operação logística, 
+              eliminar problemas críticos e aumentar significativamente a eficiência operacional.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center px-4">
               <button className="bg-white text-nexus-primary font-semibold px-6 md:px-8 py-3 rounded-lg hover:bg-white/90 transition-colors duration-300 text-sm md:text-base">
