@@ -33,7 +33,7 @@ export default function Contact() {
     {
       icon: MessageSquare,
       title: 'Falar com Especialista',
-      description: 'Consulte nossos especialistas sobre implementação e ROI',
+      description: 'Consulte nossos especialistas sobre implementação e benefícios',
       action: 'Iniciar Conversa',
       style: 'btn-secondary'
     },

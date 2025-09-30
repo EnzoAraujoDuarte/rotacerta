@@ -19,10 +19,10 @@ export default function Footer() {
   ];
 
   const technologyLinks = [
-    { label: 'TMS - Sistema de Gestão', href: '#solucoes-ti' },
-    { label: 'App do Entregador', href: '#solucoes-ti' },
-    { label: 'Dashboard Gerencial', href: '#solucoes-ti' },
-    { label: 'Portal do Cliente', href: '#solucoes-ti' }
+    { label: 'TMS - Sistema de Gestão', href: '#tecnologia' },
+    { label: 'App do Entregador', href: '#tecnologia' },
+    { label: 'Dashboard Gerencial', href: '#tecnologia' },
+    { label: 'Portal do Cliente', href: '#tecnologia' }
   ];
 
   const supportLinks = [

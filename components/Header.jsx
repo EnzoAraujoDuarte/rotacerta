@@ -34,10 +34,8 @@ export default function Header() {
     { label: 'Início', href: '#home' },
     { label: 'Sobre', href: '#sobre' },
     { label: 'Serviços', href: '#servicos' },
-    { label: 'Soluções', href: '#solucoes-ti' },
-    { label: 'Infra', href: '#infraestrutura' },
+    { label: 'Tecnologia', href: '#tecnologia' },
     { label: 'Investimentos', href: '#investimentos' },
-    { label: 'Benefícios', href: '#beneficios' },
     { label: 'Contato', href: '#contato' }
   ];
 
