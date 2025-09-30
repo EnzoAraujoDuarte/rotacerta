@@ -52,12 +52,12 @@ export default function AboutCompany() {
             Sobre a <span className="text-gradient">Rota Certa Logtech</span>
           </h2>
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Fundada em 2019, a Rota Certa Logtech nasceu da visão de transformar a logística urbana brasileira 
-            através da tecnologia. Somos especialistas em entregas de última milha para e-commerce B2C, 
-            conectando lojas virtuais aos consumidores finais com velocidade, precisão e transparência. 
-            Nossa infraestrutura tecnológica integra SAP S/4HANA para gestão empresarial e APIs diretas 
-            com plataformas como Shopify, permitindo sincronização automática de pedidos 
-            e rastreamento em tempo real.
+            A Rota Certa Logtech é uma empresa atacadista especializada na venda e distribuição de produtos 
+            de marcas líderes do mercado - como Colgate, Kimberly Clark, Reckitt, Ferrero, Huggies, Pampers 
+            e outras - para farmácias, perfumarias e supermercados. Operamos através de uma plataforma de 
+            e-commerce Shopify onde os clientes realizam seus pedidos, utilizamos o SAP ERP para gerenciar 
+            processos, e contamos com um aplicativo desenvolvido internamente (Flutter, backend TypeScript e 
+            banco PostgreSQL) para acompanhamento de entregas.
           </p>
         </div>
 
@@ -70,18 +70,18 @@ export default function AboutCompany() {
             <p className="text-base text-muted-foreground mb-6 leading-relaxed">
               Ser a principal referência em logística urbana inteligente no Brasil, revolucionando 
               a última milha através de tecnologia de ponta, inteligência artificial e automação. 
-              Nosso compromisso é proporcionar entregas ultrarrápidas, totalmente rastreáveis e com 
-              experiência superior ao consumidor final, tornando-nos o parceiro estratégico ideal 
-              para e-commerces que buscam excelência operacional. Através da integração total com 
-              SAP S/4HANA e principais plataformas de e-commerce, garantimos processos otimizados, 
-              redução de custos operacionais em até 30% e visibilidade completa em tempo real.
+              Nosso compromisso é proporcionar entregas ultrarrápidas, totalmente rastreáveis para 
+              farmácias, perfumarias e supermercados, tornando-nos o parceiro estratégico ideal 
+              para o varejo que busca excelência operacional. Através da integração com SAP ERP 
+              e Shopify, garantimos processos otimizados, redução de custos operacionais e 
+              visibilidade completa em tempo real.
             </p>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
                 <Target className="w-6 h-6 text-nexus-primary mt-1" />
                 <div>
                   <h4 className="font-semibold text-foreground">Eficiência Operacional</h4>
-                  <p className="text-muted-foreground">Roteirização inteligente por IA integrada ao SAP S/4HANA que otimiza trajetos, reduz custos e aumenta a produtividade.</p>
+                  <p className="text-muted-foreground">Roteirização inteligente por IA integrada ao SAP ERP que otimiza trajetos, reduz custos e aumenta a produtividade.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
@@ -117,7 +117,7 @@ export default function AboutCompany() {
             <h3 className="text-xl font-bold mb-4 text-foreground">Razão Social</h3>
             <p className="text-muted-foreground mb-2">Rota Certa Logtech Ltda.</p>
             <p className="text-sm text-muted-foreground">
-              Empresa de logística urbana e tecnologia para e-commerce
+              Atacadista de produtos de higiene, limpeza e alimentos
             </p>
           </div>
 
@@ -126,9 +126,9 @@ export default function AboutCompany() {
               <Target className="w-8 h-8 text-white" />
             </div>
             <h3 className="text-xl font-bold mb-4 text-foreground">Atuação</h3>
-            <p className="text-muted-foreground mb-2">Logística Last-Mile B2C</p>
+            <p className="text-muted-foreground mb-2">Atacado B2B + Logística Last-Mile</p>
             <p className="text-sm text-muted-foreground">
-              São Paulo, Rio de Janeiro, Belo Horizonte, Curitiba e Brasília
+              Vendas via Shopify para farmácias, perfumarias e supermercados
             </p>
           </div>
 

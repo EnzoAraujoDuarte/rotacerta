@@ -37,9 +37,9 @@ export default function Hero() {
 
           {/* Subtitle */}
           <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-white/90 max-w-2xl mx-auto leading-relaxed px-4">
-            A Rota Certa Logtech é líder em soluções de entrega urbana para e-commerce, 
-            oferecendo tecnologia de ponta com IA, integração SAP S/4HANA e Shopify para 
-            entregas rápidas, precisas e totalmente rastreáveis em tempo real.
+            Atacadista especializada em produtos de marcas líderes (Colgate, Kimberly Clark, Reckitt, 
+            Ferrero, Huggies, Pampers) para farmácias, perfumarias e supermercados, com plataforma 
+            Shopify, integração SAP ERP e app próprio para entregas rastreáveis em tempo real.
           </p>
 
           {/* Stats */}

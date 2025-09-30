@@ -31,15 +31,15 @@ export default function Services() {
   const services = [
     {
       icon: Package,
-      title: 'Coleta e Entrega Last-Mile B2C',
-      description: 'Serviço core de coleta em centros de distribuição dos clientes de e-commerce (integração via API com Shopify, VTEX, WooCommerce) e entrega door-to-door para o consumidor final com janelas de tempo flexíveis e rastreamento completo.',
-      features: ['Coleta agendada com 4h de antecedência', 'Entrega D+1 ou same-day (capital)', 'Cobertura em 5 capitais + região metropolitana']
+      title: 'Vendas B2B via E-commerce Shopify',
+      description: 'Plataforma de e-commerce Shopify onde farmácias, perfumarias e supermercados realizam pedidos de produtos de marcas líderes (Colgate, Kimberly Clark, Reckitt, Ferrero, Huggies, Pampers), com gestão integrada ao SAP ERP e entrega last-mile própria.',
+      features: ['Catálogo com produtos de marcas líderes', 'Integração Shopify + SAP ERP', 'Entrega própria em 5 capitais']
     },
     {
       icon: Clock,
-      title: 'Entregas Expressas Same-Day',
-      description: 'Serviço premium de entrega ultrarrápida para pedidos urgentes de e-commerce, com coleta imediata e janelas de entrega de 2-3 horas garantidas por SLA. Ideal para produtos de alto valor, medicamentos ou presentes de última hora.',
-      features: ['Janelas de 2-3 horas com 98% precisão', 'Coleta em até 1 hora após pedido', 'SLA garantido com multa contratual']
+      title: 'Logística Last-Mile para Estabelecimentos',
+      description: 'Serviço completo de entrega dos produtos vendidos via Shopify diretamente para farmácias, perfumarias e supermercatos, com rastreamento via aplicativo interno (Flutter/TypeScript/PostgreSQL) e comprovação digital de entrega.',
+      features: ['Rastreamento em tempo real via app próprio', 'Comprovação digital de entrega', 'SLA monitorado e garantido']
     },
     {
       icon: CheckCircle,
@@ -58,10 +58,10 @@ export default function Services() {
             Nossos <span className="text-gradient">Serviços</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            A Rota Certa Logtech oferece um portfólio completo de soluções de entrega urbana 
-            para e-commerce B2C, desde coletas agendadas até entregas expressas same-day. 
-            Nossa infraestrutura tecnológica com roteirização por IA e rastreamento em tempo real 
-            garante eficiência máxima, redução de custos e experiência superior para o consumidor final.
+            A Rota Certa Logtech oferece vendas B2B através de plataforma Shopify e logística 
+            completa de distribuição de produtos de marcas líderes (Colgate, Kimberly Clark, Reckitt, 
+            Ferrero, Huggies, Pampers) para farmácias, perfumarias e supermercados. Nossa infraestrutura 
+            tecnológica garante eficiência máxima e entregas rastreáveis em tempo real.
           </p>
         </div>
 
@@ -136,9 +136,9 @@ export default function Services() {
               Soluções <span className="text-nexus-primary">Tecnológicas</span> Implementadas
             </h3>
             <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Com o TMS drivin/Lincros, oferecemos serviços de logística urbana de última milha 
-              totalmente digitalizados, com eficiência operacional, rastreamento em tempo real e 
-              experiência premium para o consumidor final
+              Com tecnologia integrada (Shopify + SAP ERP + App interno), oferecemos vendas B2B 
+              e logística urbana de última milha totalmente digitalizados, com eficiência operacional, 
+              rastreamento em tempo real e experiência premium para nossos clientes
             </p>
           </div>
 
