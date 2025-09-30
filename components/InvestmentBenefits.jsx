@@ -45,11 +45,11 @@ export default function InvestmentBenefits() {
       items: ['Microsoft Intune (55 dispositivos): R$ 1.800', 'Ferramentas segurança e monitoramento: R$ 3.500', 'Políticas de segurança aplicadas', 'Monitoramento 24x7']
     },
     {
-      category: 'Equipe de Tecnologia',
-      amount: 'R$ 33.200',
+      category: 'Equipe de TI Completa',
+      amount: 'R$ 100.200',
       period: '/mês',
-      description: 'Equipe dedicada de 3 profissionais qualificados para gestão, desenvolvimento e manutenção da infraestrutura tecnológica: DevOps, desenvolvimento full-stack e gestão de integrações entre sistemas.',
-      items: ['1 Engenheiro DevOps Senior: R$ 15.000', '1 Desenvolvedor Full-Stack Pleno: R$ 10.000', '1 Analista de Integrações Pleno: R$ 8.200', 'Gestão completa do ecossistema tecnológico']
+      description: 'Equipe completa de tecnologia incluindo Engenheiro DevOps, Desenvolvedores Full-Stack, Analistas de Integrações, Suporte Técnico e demais profissionais para gestão, desenvolvimento, manutenção e evolução contínua da infraestrutura e aplicações.',
+      items: ['Engenheiros DevOps e Desenvolvedores', 'Analistas de Integrações', 'Suporte Técnico e Manutenção', 'Gestão completa do ecossistema tecnológico']
     },
     {
       category: 'Licença SAP ERP',
@@ -105,19 +105,19 @@ export default function InvestmentBenefits() {
 
   const justifications = [
     {
-      title: 'Modelo SaaS (OPEX)',
-      description: 'Sem necessidade de servidores locais ou grandes investimentos em infraestrutura. Pague apenas pelo uso mensal.',
+      title: 'CAPEX (Capital Expenditure)',
+      description: 'Investimento inicial único de R$ 285 mil para desenvolvimento do app Flutter, APIs, infraestrutura AWS e aquisição de 55 smartphones. Gera ativo de longo prazo e propriedade intelectual.',
+      advantage: 'Controle total sobre tecnologia e evolução própria'
+    },
+    {
+      title: 'OPEX (Operational Expenditure)',
+      description: 'Custo operacional mensal recorrente de R$ 119,3 mil incluindo infraestrutura AWS, licenças, planos móveis e equipe completa de TI. Despesa dedutível fiscalmente.',
       advantage: 'Flexibilidade financeira e custos previsíveis'
     },
     {
-      title: 'Foco em Mobilidade',
-      description: 'Todo investimento em hardware foca nos entregadores - quem realmente gera receita para a empresa.',
-      advantage: 'Investimento direto na operação e produtividade'
-    },
-    {
-      title: 'Vantagem Competitiva',
-      description: 'Experiência de entrega transparente com rastreamento em tempo real valorizada pelos clientes de e-commerce.',
-      advantage: 'Diferenciação no mercado e retenção de clientes'
+      title: 'Equipe Interna Completa',
+      description: 'Equipe de TI própria (R$ 100,2 mil/mês) garante desenvolvimento contínuo, manutenção ágil e capacidade de resposta rápida às necessidades do negócio.',
+      advantage: 'Autonomia tecnológica e inovação constante'
     }
   ];
 
@@ -130,9 +130,9 @@ export default function InvestmentBenefits() {
             Investimentos e <span className="text-gradient">Benefícios</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Plano de investimento estratégico focado no desenvolvimento do aplicativo Flutter próprio 
-            com roteirização IA, APIs de integração (Shopify-SAP-App), infraestrutura AWS escalável e 
-            equipe qualificada de tecnologia para gestão completa do ecossistema.
+            Investimento estratégico com CAPEX inicial de R$ 285 mil e OPEX mensal de R$ 119,3 mil, 
+            focado no desenvolvimento do aplicativo Flutter próprio com IA, APIs de integração 
+            (Shopify-SAP-App), infraestrutura AWS escalável e equipe completa de TI.
           </p>
         </div>
 
@@ -157,6 +157,42 @@ export default function InvestmentBenefits() {
             <h3 className="text-3xl font-bold mb-2">R$ {annualTotal.toLocaleString('pt-BR')}</h3>
             <p className="text-lg text-white/90">Total Primeiro Ano</p>
             <p className="text-sm text-white/80 mt-2">CAPEX + OPEX anual</p>
+          </div>
+        </div>
+
+        {/* CAPEX vs OPEX Explanation */}
+        <div className="mb-16 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950/20 dark:to-purple-950/20 rounded-2xl p-8 border-2 border-blue-200 dark:border-blue-800">
+          <h3 className="text-2xl font-bold text-center mb-8 text-foreground">
+            📊 Entendendo CAPEX e OPEX
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border-l-4 border-blue-500">
+              <h4 className="text-xl font-bold text-blue-600 dark:text-blue-400 mb-3">💰 CAPEX (Capital Expenditure)</h4>
+              <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                <strong>Despesa de Capital:</strong> Investimento inicial único para aquisição de ativos de longo prazo 
+                (desenvolvimento de software, infraestrutura, equipamentos). Gera propriedade e pode ser depreciado ao 
+                longo do tempo para fins contábeis e fiscais.
+              </p>
+              <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
+                <p className="text-sm font-semibold text-blue-700 dark:text-blue-300">Neste projeto:</p>
+                <p className="text-2xl font-bold text-blue-600 dark:text-blue-400">R$ 285.000</p>
+                <p className="text-xs text-muted-foreground mt-1">Investimento único</p>
+              </div>
+            </div>
+
+            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border-l-4 border-purple-500">
+              <h4 className="text-xl font-bold text-purple-600 dark:text-purple-400 mb-3">📅 OPEX (Operational Expenditure)</h4>
+              <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                <strong>Despesa Operacional:</strong> Custos recorrentes mensais necessários para manter a operação 
+                (salários, licenças de software, infraestrutura cloud, serviços). Dedutíveis diretamente no imposto 
+                de renda como despesa operacional.
+              </p>
+              <div className="bg-purple-50 dark:bg-purple-900/20 rounded-lg p-4">
+                <p className="text-sm font-semibold text-purple-700 dark:text-purple-300">Neste projeto:</p>
+                <p className="text-2xl font-bold text-purple-600 dark:text-purple-400">R$ 119.300</p>
+                <p className="text-xs text-muted-foreground mt-1">Custo mensal recorrente</p>
+              </div>
+            </div>
           </div>
         </div>
 
