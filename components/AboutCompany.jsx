@@ -15,6 +15,20 @@ export default function AboutCompany() {
       { name: "Gerente Financeiro", icon: Briefcase, color: "from-orange-600 to-orange-500", team: 1 },
       { name: "Gerente de RH", icon: Users, color: "from-pink-600 to-pink-500", team: 1 }
     ],
+    analysts: [
+      { name: "Analista de Operações", icon: Clipboard, color: "from-teal-600 to-teal-500", count: 4 },
+      { name: "Analista de TI", icon: Database, color: "from-teal-600 to-teal-500", count: 3 },
+      { name: "Analista Comercial", icon: TrendingUp, color: "from-teal-600 to-teal-500", count: 3 },
+      { name: "Analista Financeiro", icon: Briefcase, color: "from-teal-600 to-teal-500", count: 2 },
+      { name: "Analista de RH", icon: UserCheck, color: "from-teal-600 to-teal-500", count: 2 }
+    ],
+    assistants: [
+      { name: "Assistente de Operações", icon: Package, color: "from-cyan-600 to-cyan-500", count: 3 },
+      { name: "Assistente de TI", icon: HeadphonesIcon, color: "from-cyan-600 to-cyan-500", count: 2 },
+      { name: "Assistente Comercial", icon: Users, color: "from-cyan-600 to-cyan-500", count: 2 },
+      { name: "Assistente Financeiro", icon: Clipboard, color: "from-cyan-600 to-cyan-500", count: 2 },
+      { name: "Assistente de RH", icon: UserCheck, color: "from-cyan-600 to-cyan-500", count: 1 }
+    ],
     drivers: {
       total: 50,
       distribution: [
@@ -182,6 +196,54 @@ export default function AboutCompany() {
                   </div>
                 );
               })}
+            </div>
+
+            {/* Analysts */}
+            <div className="mt-12">
+              <div className="flex justify-center mb-6">
+                <div className="inline-block px-8 py-3 bg-gradient-to-r from-teal-600 to-teal-500 rounded-full text-white font-bold text-lg shadow-lg">
+                  ANALISTAS (14)
+                </div>
+              </div>
+              
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 md:gap-6 mb-8 px-4">
+                {orgStructure.analysts.map((analyst, index) => {
+                  const AnalystIcon = analyst.icon;
+                  return (
+                    <div key={index} className="card-hover text-center hover-lift bg-gradient-to-br from-teal-50 to-teal-100 dark:from-teal-900/20 dark:to-teal-900/20 border-2 border-teal-200 dark:border-teal-800">
+                      <div className={`w-14 h-14 md:w-16 md:h-16 bg-gradient-to-r ${analyst.color} rounded-xl flex items-center justify-center mx-auto mb-3 md:mb-4 shadow-card`}>
+                        <AnalystIcon className="w-7 h-7 md:w-8 md:h-8 text-white" />
+                      </div>
+                      <h5 className="text-xs sm:text-sm md:text-base font-bold text-teal-700 dark:text-teal-400 mb-1 leading-tight">{analyst.name}</h5>
+                      <p className="text-xs md:text-sm text-muted-foreground font-medium">{analyst.count} colaboradores</p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Assistants */}
+            <div className="mt-12">
+              <div className="flex justify-center mb-6">
+                <div className="inline-block px-8 py-3 bg-gradient-to-r from-cyan-600 to-cyan-500 rounded-full text-white font-bold text-lg shadow-lg">
+                  ASSISTENTES (10)
+                </div>
+              </div>
+              
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 md:gap-6 mb-8 px-4">
+                {orgStructure.assistants.map((assistant, index) => {
+                  const AssistantIcon = assistant.icon;
+                  return (
+                    <div key={index} className="card-hover text-center hover-lift bg-gradient-to-br from-cyan-50 to-cyan-100 dark:from-cyan-900/20 dark:to-cyan-900/20 border-2 border-cyan-200 dark:border-cyan-800">
+                      <div className={`w-14 h-14 md:w-16 md:h-16 bg-gradient-to-r ${assistant.color} rounded-xl flex items-center justify-center mx-auto mb-3 md:mb-4 shadow-card`}>
+                        <AssistantIcon className="w-7 h-7 md:w-8 md:h-8 text-white" />
+                      </div>
+                      <h5 className="text-xs sm:text-sm md:text-base font-bold text-cyan-700 dark:text-cyan-400 mb-1 leading-tight">{assistant.name}</h5>
+                      <p className="text-xs md:text-sm text-muted-foreground font-medium">{assistant.count} colaboradores</p>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
 
             {/* Drivers Distribution */}
