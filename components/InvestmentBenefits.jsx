@@ -49,13 +49,6 @@ export default function InvestmentBenefits() {
   const initialInvestment = 150000;
   const annualTotal = (monthlyTotal * 12) + initialInvestment;
 
-  const savingsBreakdown = [
-    { item: 'Redução combustível e pedágios (35%)', value: 'R$ 58.000/mês' },
-    { item: 'Redução equipe administrativa (67%)', value: 'R$ 32.000/mês' },
-    { item: 'Redução equipe atendimento (72%)', value: 'R$ 21.000/mês' },
-    { item: 'Eliminação perda canhotos (15% faturamento)', value: 'R$ 18.000/mês' },
-    { item: 'Total de economia operacional mensal', value: 'R$ 129.000/mês', highlight: true }
-  ];
 
   const mainBenefits = [
     {
@@ -116,9 +109,8 @@ export default function InvestmentBenefits() {
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Investimento estratégico de R$ 1,43 milhão no primeiro ano (CAPEX + OPEX) para transformação 
-            digital completa. Com ROI alcançado em apenas 5 meses através de economia operacional de 35%, 
-            aumento de 45% na produtividade e crescimento de 180% na receita anual, o projeto superou 
-            todas as expectativas e posicionou a empresa como referência tecnológica no setor.
+            digital completa. O projeto trouxe aumento de 45% na produtividade e crescimento de 180% na receita anual, 
+            posicionando a empresa como referência tecnológica no setor.
           </p>
         </div>
 
@@ -183,64 +175,6 @@ export default function InvestmentBenefits() {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-
-        {/* ROI Analysis */}
-        <div className="mb-20">
-          <h3 className="text-3xl font-bold text-center mb-12 text-foreground">
-            Análise de ROI e Benefícios Alcançados
-          </h3>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-            {/* Investment */}
-            <div className="card-hover">
-              <h4 className="text-2xl font-bold text-foreground mb-6 flex items-center">
-                <DollarSign className="w-8 h-8 text-destructive mr-3" />
-                Investimento Mensal
-              </h4>
-              <div className="p-6 bg-destructive/5 border border-destructive/20 rounded-lg">
-                <p className="text-4xl font-bold text-destructive mb-2">R$ {monthlyTotal.toLocaleString('pt-BR')}</p>
-                <p className="text-sm text-muted-foreground">Custo operacional mensal total</p>
-              </div>
-            </div>
-
-            {/* Savings */}
-            <div className="card-hover">
-              <h4 className="text-2xl font-bold text-foreground mb-6 flex items-center">
-                <TrendingUp className="w-8 h-8 text-green-600 mr-3" />
-                Economia Alcançada
-              </h4>
-              <div className="space-y-3">
-                {savingsBreakdown.map((saving, index) => (
-                  <div 
-                    key={index} 
-                    className={`flex justify-between items-center p-3 rounded-lg ${
-                      saving.highlight 
-                        ? 'bg-green-500/10 border border-green-500/30' 
-                        : 'bg-background border border-border'
-                    }`}
-                  >
-                    <span className={`text-sm ${saving.highlight ? 'font-semibold text-foreground' : 'text-muted-foreground'}`}>
-                      {saving.item}
-                    </span>
-                    <span className={`font-semibold ${saving.highlight ? 'text-green-600 text-lg' : 'text-foreground'}`}>
-                      {saving.value}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Payback */}
-          <div className="text-center">
-            <div className="inline-block p-6 bg-gradient-to-r from-green-600 to-green-500 rounded-2xl text-white shadow-hero">
-              <p className="text-sm text-white/80 mb-2">ROI Alcançado (Payback Period)</p>
-              <p className="text-5xl font-bold mb-2">5 meses</p>
-              <p className="text-base text-white/90 mb-2">Economia mensal: R$ 129.000 | Investimento mensal: R$ 107.000</p>
-              <p className="text-sm text-white/80">Investimento inicial de R$ 150.000 recuperado em 5 meses</p>
-              <p className="text-xs text-white/70 mt-3">A partir do 6º mês: lucro líquido adicional de R$ 22.000/mês</p>
-            </div>
           </div>
         </div>
 
@@ -311,10 +245,10 @@ export default function InvestmentBenefits() {
               Transformação Comprovada com Resultados Reais
             </h3>
             <p className="text-xl text-white/90 mb-6 max-w-3xl mx-auto leading-relaxed">
-              Este investimento de R$ 1,43 milhão no primeiro ano não foi um custo, mas o principal 
+              Este investimento de R$ 1,43 milhão no primeiro ano foi o principal 
               catalisador que transformou a Rota Certa Logtech em referência tecnológica no setor. 
-              Com ROI em 5 meses, economia operacional de R$ 129k mensais e crescimento de 180% na receita, 
-              o projeto superou todas as expectativas e conquistou 8 novos clientes enterprise no último ano.
+              Com crescimento de 180% na receita, o projeto superou todas as expectativas e 
+              conquistou 8 novos clientes enterprise no último ano.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-white text-nexus-primary font-semibold px-8 py-4 rounded-lg hover:bg-white/90 transition-colors duration-300 shadow-lg">

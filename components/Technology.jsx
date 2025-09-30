@@ -129,12 +129,8 @@ export default function Technology() {
             Soluções de <span className="text-gradient">Tecnologia</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            A Rota Certa Logtech implementou uma stack tecnológica completa de última geração para 
-            transformação digital: TMS drivin/Lincros com roteirização por IA, aplicativo mobile 
-            nativo para entregadores (Android), dashboard gerencial web responsivo, portal do cliente 
-            com tracking em tempo real, e integrações via API REST com SAP S/4HANA (ERP) e principais 
-            plataformas de e-commerce (Shopify, VTEX, WooCommerce). Infraestrutura 100% Cloud SaaS 
-            com governança baseada em ITIL v4.
+            Soluções tecnológicas avançadas para transformação digital da logística urbana, 
+            com infraestrutura 100% Cloud SaaS.
           </p>
         </div>
 
