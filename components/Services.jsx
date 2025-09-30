@@ -37,9 +37,9 @@ export default function Services() {
     },
     {
       icon: Clock,
-      title: 'Logística Last-Mile para Estabelecimentos',
-      description: 'Serviço completo de entrega dos produtos vendidos via Shopify diretamente para farmácias, perfumarias e supermercatos, com rastreamento via aplicativo interno (Flutter/TypeScript/PostgreSQL) e comprovação digital de entrega.',
-      features: ['Rastreamento em tempo real via app próprio', 'Comprovação digital de entrega', 'SLA monitorado e garantido']
+      title: 'Logística Last-Mile B2B e Expansão B2C',
+      description: 'Serviço completo de entrega dos produtos vendidos via Shopify para estabelecimentos (B2B) e expandindo para entregas ao consumidor final (B2C), com rastreamento via aplicativo interno (Flutter/TypeScript/PostgreSQL) e comprovação digital de entrega.',
+      features: ['Rastreamento em tempo real via app próprio', 'Comprovação digital de entrega', 'Expansão para entregas B2C last-mile']
     },
     {
       icon: CheckCircle,
@@ -58,10 +58,11 @@ export default function Services() {
             Nossos <span className="text-gradient">Serviços</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            A Rota Certa Logtech oferece vendas B2B através de plataforma Shopify e logística 
-            completa de distribuição de produtos de marcas líderes (Colgate, Kimberly Clark, Reckitt, 
-            Ferrero, Huggies, Pampers) para farmácias, perfumarias e supermercados. Nossa infraestrutura 
-            tecnológica garante eficiência máxima e entregas rastreáveis em tempo real.
+            A Rota Certa Logtech oferece vendas B2B através de plataforma Shopify e está expandindo 
+            para B2C com logística last-mile completa. Distribuímos produtos de marcas líderes 
+            (Colgate, Kimberly Clark, Reckitt, Ferrero, Huggies, Pampers) para farmácias, perfumarias 
+            e supermercados, com infraestrutura tecnológica que garante eficiência máxima e entregas 
+            rastreáveis em tempo real.
           </p>
         </div>
 
@@ -137,8 +138,8 @@ export default function Services() {
             </h3>
             <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Com tecnologia integrada (Shopify + SAP ERP + App interno), oferecemos vendas B2B 
-              e logística urbana de última milha totalmente digitalizados, com eficiência operacional, 
-              rastreamento em tempo real e experiência premium para nossos clientes
+              e estamos expandindo para B2C com logística urbana de última milha totalmente digitalizada, 
+              com eficiência operacional, rastreamento em tempo real e experiência premium
             </p>
           </div>
 

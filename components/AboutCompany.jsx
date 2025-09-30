@@ -52,12 +52,12 @@ export default function AboutCompany() {
             Sobre a <span className="text-gradient">Rota Certa Logtech</span>
           </h2>
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            A Rota Certa Logtech é uma empresa atacadista especializada na venda e distribuição de produtos 
+            A Rota Certa Logtech é uma empresa atacadista B2B especializada na venda e distribuição de produtos 
             de marcas líderes do mercado - como Colgate, Kimberly Clark, Reckitt, Ferrero, Huggies, Pampers 
-            e outras - para farmácias, perfumarias e supermercados. Operamos através de uma plataforma de 
-            e-commerce Shopify onde os clientes realizam seus pedidos, utilizamos o SAP ERP para gerenciar 
-            processos, e contamos com um aplicativo desenvolvido internamente (Flutter, backend TypeScript e 
-            banco PostgreSQL) para acompanhamento de entregas.
+            e outras - para farmácias, perfumarias e supermercados. Estamos expandindo para o mercado B2C com 
+            foco em logística last-mile. Operamos através de uma plataforma de e-commerce Shopify, utilizamos 
+            o SAP ERP para gerenciar processos, e contamos com um aplicativo desenvolvido internamente 
+            (Flutter, backend TypeScript e banco PostgreSQL) para acompanhamento de entregas.
           </p>
         </div>
 
@@ -70,11 +70,11 @@ export default function AboutCompany() {
             <p className="text-base text-muted-foreground mb-6 leading-relaxed">
               Ser a principal referência em logística urbana inteligente no Brasil, revolucionando 
               a última milha através de tecnologia de ponta, inteligência artificial e automação. 
-              Nosso compromisso é proporcionar entregas ultrarrápidas, totalmente rastreáveis para 
-              farmácias, perfumarias e supermercados, tornando-nos o parceiro estratégico ideal 
-              para o varejo que busca excelência operacional. Através da integração com SAP ERP 
-              e Shopify, garantimos processos otimizados, redução de custos operacionais e 
-              visibilidade completa em tempo real.
+              Nosso compromisso é proporcionar entregas ultrarrápidas e totalmente rastreáveis, 
+              atendendo farmácias, perfumarias e supermercados (B2B) e expandindo para o consumidor 
+              final (B2C), tornando-nos o parceiro estratégico ideal para quem busca excelência 
+              operacional. Através da integração com SAP ERP e Shopify, garantimos processos 
+              otimizados, redução de custos operacionais e visibilidade completa em tempo real.
             </p>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
@@ -126,9 +126,9 @@ export default function AboutCompany() {
               <Target className="w-8 h-8 text-white" />
             </div>
             <h3 className="text-xl font-bold mb-4 text-foreground">Atuação</h3>
-            <p className="text-muted-foreground mb-2">Atacado B2B + Logística Last-Mile</p>
+            <p className="text-muted-foreground mb-2">B2B + Expansão B2C Last-Mile</p>
             <p className="text-sm text-muted-foreground">
-              Vendas via Shopify para farmácias, perfumarias e supermercados
+              Atacado para varejo + Expandindo para entregas ao consumidor final
             </p>
           </div>
 

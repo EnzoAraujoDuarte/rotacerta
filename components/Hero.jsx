@@ -37,9 +37,10 @@ export default function Hero() {
 
           {/* Subtitle */}
           <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-white/90 max-w-2xl mx-auto leading-relaxed px-4">
-            Atacadista especializada em produtos de marcas líderes (Colgate, Kimberly Clark, Reckitt, 
-            Ferrero, Huggies, Pampers) para farmácias, perfumarias e supermercados, com plataforma 
-            Shopify, integração SAP ERP e app próprio para entregas rastreáveis em tempo real.
+            Atacadista B2B especializada em produtos de marcas líderes (Colgate, Kimberly Clark, Reckitt, 
+            Ferrero, Huggies, Pampers) para farmácias, perfumarias e supermercados, expandindo para 
+            B2C com logística last-mile. Plataforma Shopify, integração SAP ERP e app próprio para 
+            entregas rastreáveis em tempo real.
           </p>
 
           {/* Stats */}
