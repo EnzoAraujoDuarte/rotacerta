@@ -34,24 +34,34 @@ export default function Technology() {
 
   const itilPractices = [
     {
-      practice: 'Equipe DevOps e Desenvolvimento',
-      description: 'Engenheiro DevOps Senior + Desenvolvedor Full-Stack Pleno para gestão AWS, evolução do app Flutter e manutenção',
-      benefit: 'Desenvolvimento e infraestrutura geridos internamente'
+      practice: 'ITIL: Gestão de Incidentes',
+      description: 'Service Desk estruturado com processo ITIL 4 para resolver rapidamente problemas técnicos (ex: app travado, API fora do ar). Tickets priorizados por impacto e urgência.',
+      benefit: 'Resolução rápida com SLA definido e documentação'
     },
     {
-      practice: 'Gestão de Integrações',
-      description: 'Analista de Integrações Pleno focado nas APIs entre Shopify, SAP ERP e aplicativo Flutter',
-      benefit: 'Sincronização automática e monitoramento contínuo'
+      practice: 'ITIL: Gestão de Mudanças',
+      description: 'Processo formal para deploy de novas versões do app Flutter, atualizações de APIs e mudanças na infraestrutura AWS, com testes, aprovação e plano de rollback.',
+      benefit: 'Estabilidade do sistema e redução de riscos'
     },
     {
-      practice: 'Segurança e Conformidade LGPD',
-      description: 'Ferramentas de segurança, monitoramento AWS e Microsoft Intune para gestão de 55 dispositivos móveis',
-      benefit: 'Proteção de dados e conformidade automatizada'
+      practice: 'COBIT: Alinhamento TI-Negócio',
+      description: 'TI desenvolvida para suportar estratégia de expansão B2C. Decisões tecnológicas baseadas em objetivos de negócio, ROI e prioridades estratégicas da empresa.',
+      benefit: 'TI como enabler do crescimento e competitividade'
     },
     {
-      practice: 'Infraestrutura AWS Escalável',
-      description: 'Servidores EC2, PostgreSQL RDS, S3, CloudFront com backup automático e alta disponibilidade',
-      benefit: 'Escalabilidade e resiliência para crescimento B2C'
+      practice: 'COBIT: Gestão de Riscos e Compliance',
+      description: 'Avaliação contínua de riscos de segurança, conformidade LGPD, backup/disaster recovery e proteção de dados sensíveis. Auditorias periódicas e controles documentados.',
+      benefit: 'Conformidade legal e proteção contra incidentes'
+    },
+    {
+      practice: 'ITIL: Gestão de Configuração',
+      description: 'Inventário completo de ativos de TI: 55 smartphones, servidores AWS, licenças SAP/Shopify, versões do app Flutter. CMDB atualizado para rastreabilidade total.',
+      benefit: 'Controle de ativos e rastreabilidade'
+    },
+    {
+      practice: 'COBIT: Medição de Desempenho',
+      description: 'KPIs definidos para avaliar desempenho de TI: disponibilidade de sistemas, tempo médio de resposta, taxa de sucesso de deploy, satisfação de usuários.',
+      benefit: 'Melhoria contínua baseada em métricas'
     }
   ];
 
@@ -231,27 +241,85 @@ export default function Technology() {
           </div>
         </div>
 
+        {/* Governance Frameworks Introduction */}
+        <div className="mb-12 bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-950/20 dark:to-blue-950/20 rounded-2xl p-8 border-2 border-green-200 dark:border-green-800">
+          <h3 className="text-2xl font-bold text-center mb-8 text-foreground">
+            🏛️ Frameworks de Governança de TI
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border-l-4 border-green-500">
+              <h4 className="text-xl font-bold text-green-600 dark:text-green-400 mb-3">📚 ITIL (Information Technology Infrastructure Library)</h4>
+              <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                <strong>Framework de Gerenciamento de Serviços de TI</strong> que define as melhores práticas para 
+                entregar serviços de TI com qualidade. Inclui processos como gestão de incidentes, mudanças, 
+                problemas e configuração. ITIL 4 é a versão mais recente, focada em entrega ágil e DevOps.
+              </p>
+              <div className="space-y-2">
+                <div className="flex items-start space-x-2">
+                  <div className="w-1.5 h-1.5 bg-green-500 rounded-full mt-2"></div>
+                  <p className="text-xs text-muted-foreground">Gestão de Incidentes e Problemas</p>
+                </div>
+                <div className="flex items-start space-x-2">
+                  <div className="w-1.5 h-1.5 bg-green-500 rounded-full mt-2"></div>
+                  <p className="text-xs text-muted-foreground">Gestão de Mudanças e Releases</p>
+                </div>
+                <div className="flex items-start space-x-2">
+                  <div className="w-1.5 h-1.5 bg-green-500 rounded-full mt-2"></div>
+                  <p className="text-xs text-muted-foreground">Service Desk e Catálogo de Serviços</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border-l-4 border-blue-500">
+              <h4 className="text-xl font-bold text-blue-600 dark:text-blue-400 mb-3">🎯 COBIT (Control Objectives for Information and Related Technologies)</h4>
+              <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                <strong>Framework de Governança Corporativa de TI</strong> que alinha TI aos objetivos de negócio. 
+                Foca em conformidade, gestão de riscos, segurança da informação e entrega de valor. Define controles, 
+                processos e métricas para garantir que TI suporte a estratégia empresarial.
+              </p>
+              <div className="space-y-2">
+                <div className="flex items-start space-x-2">
+                  <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2"></div>
+                  <p className="text-xs text-muted-foreground">Alinhamento TI com Negócio</p>
+                </div>
+                <div className="flex items-start space-x-2">
+                  <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2"></div>
+                  <p className="text-xs text-muted-foreground">Gestão de Riscos e Conformidade</p>
+                </div>
+                <div className="flex items-start space-x-2">
+                  <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2"></div>
+                  <p className="text-xs text-muted-foreground">Medição de Desempenho e Valor</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* ITIL Practices */}
         <div className="mb-20">
           <h3 className="text-2xl font-bold text-center mb-12 text-foreground">
-            Modelo de Gestão de TI e Governança
+            Aplicação de ITIL e COBIT no Projeto
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {itilPractices.map((item, index) => (
-              <div key={index} className="card-hover hover-lift">
-                <div className="flex items-start space-x-4">
-                  <div className="w-3 h-3 bg-nexus-secondary rounded-full mt-2 flex-shrink-0"></div>
-                  <div>
-                    <h4 className="text-lg font-bold text-foreground mb-2">{item.practice}</h4>
-                    <p className="text-muted-foreground mb-3 text-sm">{item.description}</p>
-                    <div className="p-3 bg-nexus-secondary/5 rounded-lg">
-                      <p className="text-xs text-nexus-secondary font-semibold">Benefício:</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {itilPractices.map((item, index) => {
+              const isITIL = item.practice.startsWith('ITIL');
+              const borderColor = isITIL ? 'border-green-500' : 'border-blue-500';
+              const bgColor = isITIL ? 'bg-green-500/5' : 'bg-blue-500/5';
+              const textColor = isITIL ? 'text-green-600 dark:text-green-400' : 'text-blue-600 dark:text-blue-400';
+              
+              return (
+                <div key={index} className={`card-hover hover-lift border-l-4 ${borderColor}`}>
+                  <div className="p-4">
+                    <h4 className={`text-base md:text-lg font-bold mb-3 ${textColor}`}>{item.practice}</h4>
+                    <p className="text-muted-foreground mb-4 text-xs md:text-sm leading-relaxed">{item.description}</p>
+                    <div className={`p-3 ${bgColor} rounded-lg`}>
+                      <p className={`text-xs font-semibold ${textColor} mb-1`}>✓ Benefício:</p>
                       <p className="text-xs text-muted-foreground">{item.benefit}</p>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
 
