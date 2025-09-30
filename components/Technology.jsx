@@ -4,54 +4,54 @@ export default function Technology() {
   const tmsSystems = [
     {
       icon: MapPin,
-      title: 'TMS - drivin ou Lincros (Cloud SaaS)',
-      description: 'Sistema de Gerenciamento de Transporte (TMS) com roteirização automática por IA/ML que analisa histórico de 6 meses, trânsito em tempo real (integração Waze/Google Maps), prioridades de SLA e capacidade de 50 veículos para gerar rotas otimizadas dinamicamente.',
-      features: ['Roteirização IA com 35% economia combustível', 'Otimização dinâmica a cada 15min (trânsito)', 'Monitoramento GPS em tempo real (3 em 3 min)', 'Gestão de janelas de entrega e SLA'],
-      recommended: 'Drivin e Lincros são líderes brasileiros em TMS para last-mile, com comprovados cases de economia de 30-40% em custos operacionais e aumento de 40-50% na produtividade'
-    },
-    {
-      icon: Smartphone,
-      title: 'App do Entregador (Android Nativo)',
-      description: 'Aplicativo mobile Android nativo com interface intuitiva que digitaliza completamente o processo de entrega: scan de código de barras, navegação turn-by-turn integrada (Waze), comprovação digital com foto geo-localizada + assinatura na tela, e chat centralizado para comunicação de ocorrências.',
-      features: ['POD digital: foto + assinatura + coordenadas GPS', 'Comunicação in-app (substitui WhatsApp)', 'Registro estruturado de ocorrências (8 tipos)', 'Navegação integrada Waze/Google Maps'],
-      recommended: 'Eliminou 100% dos canhotos de papel (antes 15% de perda mensal), acelerou ciclo de faturamento de 15 para 2 dias, e aumentou produtividade em 45% ao eliminar tarefas administrativas manuais'
+      title: 'Oracle Fusion Cloud SCM (Módulo Logística)',
+      description: 'Plataforma líder global em Supply Chain com módulos de IA/ML para otimização e previsão logística. Robustez e capacidade de integração via APIs com Shopify, SAP ERP e aplicativo interno de entregas (Flutter/TypeScript/PostgreSQL), ideal para escalar operações sem gargalos.',
+      features: ['Roteirização com IA/ML e previsão de demanda', 'Integração nativa via APIs REST', 'Gestão de pátio e execução logística', 'Escalabilidade para grandes clientes corporativos'],
+      recommended: 'Plataforma de classe mundial projetada para empresas que atendem grandes clientes corporativos, oferecendo recursos avançados de previsão e otimização com IA'
     },
     {
       icon: Database,
-      title: 'Dashboard de Gestão (Web Responsivo)',
-      description: 'Painel gerencial web responsivo (desktop/tablet) com mais de 40 KPIs em tempo real sincronizados com SAP S/4HANA: taxa de entrega, tempo médio de rota, custo por entrega, produtividade por entregador, SLA, NPS, e heatmaps de ocorrências. Com drill-down para análise granular e exportação para Excel/PDF.',
-      features: ['40+ KPIs atualizados em tempo real (5 em 5 min)', 'Integração bidirecional SAP S/4HANA (API REST)', 'Análise de custos: R$/entrega, R$/km, R$/hora', 'Relatórios automáticos diários/semanais/mensais'],
-      recommended: 'Proporcionou visibilidade 360° da operação que antes não existia. Gestores conseguem identificar gargalos, entregadores improdutivos e oportunidades de otimização em tempo real, resultando em decisões data-driven que aumentaram margem EBITDA em 12 pontos percentuais'
+      title: 'Snowflake Data Warehouse',
+      description: 'Plataforma de dados em nuvem de referência no mercado, projetada para performance e escalabilidade. Servirá como data warehouse central, ingerindo dados do Shopify, SAP ERP, banco PostgreSQL do app de entregas e Oracle SCM para visão unificada do negócio.',
+      features: ['Repositório centralizado (single source of truth)', 'Integração com Shopify, SAP, PostgreSQL e Oracle', 'Performance e escalabilidade em nuvem', 'Governança de dados e conformidade LGPD'],
+      recommended: 'Elimina ambiguidade de planilhas departamentais e consolida toda a informação em uma única fonte confiável para decisões estratégicas'
     },
     {
       icon: Camera,
-      title: 'Portal do Cliente + Tracking Público',
-      description: 'Portal web white-label para clientes B2B (lojas de e-commerce) com dashboard de pedidos, SLA, e custos. Página de tracking público para consumidores finais com mapa em tempo real, ETA dinâmico (atualizado a cada 5 min), e notificações proativas via SMS/WhatsApp. Integração via Webhook/API REST com Shopify, VTEX e WooCommerce.',
-      features: ['Tracking público: mapa tempo real + ETA dinâmico', 'Notificações proativas (SMS/WhatsApp/Email)', 'Histórico completo: 12 meses de entregas', 'API REST para integração com qualquer e-commerce'],
-      recommended: 'Reduziu ligações ao SAC em 72% (de 280 para 78 chamadas/dia), aumentou NPS de 45 para 87 pontos, e se tornou diferencial competitivo chave que conquistou 8 grandes clientes de e-commerce no último ano'
+      title: 'Tableau (Business Intelligence)',
+      description: 'Líder no quadrante mágico do Gartner, o Tableau se conecta ao Snowflake para transformar dados brutos em dashboards interativos e análises visuais poderosas, permitindo que a gestão tome decisões estratégicas com base em inteligência de dados em tempo real.',
+      features: ['Dashboards interativos em tempo real', 'Conexão nativa com Snowflake', 'Análises visuais avançadas', 'KPIs: OTIF, custo por entrega, taxa de sucesso'],
+      recommended: 'Proporciona visibilidade completa sobre indicadores críticos (OTIF, custo por entrega, taxa de sucesso na primeira tentativa) permitindo ações corretivas rápidas'
+    },
+    {
+      icon: Smartphone,
+      title: 'Salesforce Sales Cloud (CRM)',
+      description: 'Plataforma de CRM nº 1 do mundo, oferece escalabilidade e automações para gerenciar processo de vendas B2B complexo e garantir excelência no relacionamento com clientes. Integração nativa com Shopify e visão 360º do ciclo de vida dos clientes.',
+      features: ['Gestão completa do ciclo de vida B2B', 'Integração nativa com Shopify', 'Automações avançadas de vendas', 'Gestão de contratos e suporte pós-venda'],
+      recommended: 'Essencial para gerenciar relacionamento com grandes clientes corporativos (farmácias, perfumarias, supermercados) e garantir cumprimento de SLAs contratuais'
     }
   ];
 
   const itilPractices = [
     {
-      practice: 'Gestão de Incidentes',
-      description: 'Processo estruturado para resolver problemas como "aplicativo do motorista travou"',
-      benefit: 'Resolução rápida e documentada'
+      practice: 'ITIL 4 via Jira Service Management',
+      description: 'Gestão profissional de incidentes, requisições e mudanças com processo claro e auditável',
+      benefit: 'Processo estruturado para suporte tecnológico'
     },
     {
-      practice: 'Gestão de Mudanças',
-      description: 'Controle de atualizações no TMS e aplicativos com testes e rollback',
-      benefit: 'Estabilidade e confiabilidade'
+      practice: 'ISO/IEC 27001 e LGPD',
+      description: 'Conformidade gerenciada via ferramentas nativas de segurança (AWS Security Hub, Oracle Cloud Guard) e SIEM Datadog',
+      benefit: 'Monitoramento contínuo de conformidade'
     },
     {
-      practice: 'Gestão de Configuração',
-      description: 'Inventário de smartphones corporativos, planos de dados e dispositivos',
-      benefit: 'Controle de ativos de TI'
+      practice: 'Platform Ops (Equipe Interna)',
+      description: 'Engenheiro de Plataforma focado em gerenciar integrações via API entre sistemas (Shopify, SAP, Oracle SCM, app interno)',
+      benefit: 'Automações e saúde do ecossistema tecnológico'
     },
     {
-      practice: 'Service Desk',
-      description: 'Suporte técnico 24/7 para entregadores e equipe operacional',
-      benefit: 'Suporte contínuo e eficiente'
+      practice: 'Governança de Dados',
+      description: 'Controle de acesso granular (RBAC/ABAC) e gestão automatizada de consentimento LGPD',
+      benefit: 'Segurança máxima e conformidade automatizada'
     }
   ];
 
@@ -81,21 +81,21 @@ export default function Technology() {
   const mobileInfrastructure = [
     {
       icon: Phone,
-      title: 'Smartphones Corporativos Robustos',
-      description: 'Dispositivos profissionais Samsung Galaxy XCover Pro ou Motorola Defy (IP68, MIL-STD-810H) preparados para uso intensivo em campo com quedas, água e temperatura extrema',
-      specs: ['Certificação IP68 (água/poeira)', 'Bateria 5000mAh (2 dias de autonomia)', 'GPS multi-constelação (precisão 3m)', 'Tela 6.3" legível sob sol direto']
+      title: 'Smartphones Corporativos (80 unidades)',
+      description: 'Aquisição de 80 smartphones corporativos para os colaboradores (30 da gestão/operações + 50 entregadores), gerenciados pela plataforma Microsoft Intune para aplicação de políticas de segurança e proteção de dados',
+      specs: ['80 smartphones corporativos', 'Gestão via Microsoft Intune (UEM)', 'Políticas de segurança aplicadas', 'Proteção de dados em campo']
     },
     {
       icon: Zap,
-      title: 'Conectividade 4G/5G Corporativa',
-      description: 'Planos corporativos Vivo/Claro M2M (Machine-to-Machine) com dados ilimitados, IP fixo, APN dedicada e prioridade de rede para garantir transmissão contínua de GPS e fotos',
-      specs: ['Cobertura 4G/5G em 5 capitais + região metropolitana', 'Dados ilimitados (fair use 100GB/linha)', 'Prioridade QoS em horário comercial', 'NOC 24x7 com SLA de 4h']
+      title: 'Arquitetura Multi-Cloud',
+      description: 'Utilização de Oracle Cloud Infrastructure (OCI) para Oracle SCM e AWS para Snowflake, backend TypeScript e banco PostgreSQL do aplicativo, garantindo que cada sistema rode em seu ambiente otimizado sem vendor lock-in',
+      specs: ['Oracle Cloud (OCI) para Oracle SCM', 'AWS para Snowflake e app interno', 'Integração entre clouds via APIs', 'Redundância e alta disponibilidade']
     },
     {
       icon: Lock,
-      title: 'MDM - Mobile Device Management',
-      description: 'Plataforma VMware Workspace ONE ou Microsoft Intune para gestão centralizada de 50 smartphones, permitindo instalação remota, políticas de segurança, wipe em caso de roubo e inventário de ativos',
-      specs: ['Deploy remoto de apps (OTA)', 'Wipe/lock remoto em caso de perda/roubo', 'Políticas: senha obrigatória, criptografia', 'Dashboard de inventário e health de dispositivos']
+      title: 'Segurança com Datadog e Okta',
+      description: 'SIEM Datadog para monitoramento de segurança em tempo real em todo ecossistema e Okta como plataforma de gestão de identidade (Single Sign-On) para acesso seguro a Shopify, SAP, Oracle SCM e backend do app',
+      specs: ['SIEM Datadog: monitoramento 24/7', 'Okta: SSO e gestão de identidade', 'Alertas de atividades suspeitas', 'Princípio do menor privilégio']
     }
   ];
 
@@ -129,15 +129,15 @@ export default function Technology() {
             Soluções de <span className="text-gradient">Tecnologia</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Soluções tecnológicas avançadas para transformação digital da logística urbana, 
-            com infraestrutura 100% Cloud SaaS.
+            Proposta de solução tecnológica integrada com plataformas de classe mundial 
+            (Oracle, Snowflake, Tableau, Salesforce) e infraestrutura multi-cloud robusta.
           </p>
         </div>
 
         {/* TMS Solutions */}
         <div className="mb-20">
           <h3 className="text-2xl font-bold text-center mb-12 text-foreground">
-            Plataforma TMS Proposta
+            Softwares Recomendados - Proposta de Solução
           </h3>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {tmsSystems.map((system, index) => {
@@ -205,7 +205,7 @@ export default function Technology() {
 
           {/* Mobile Infrastructure */}
           <div className="mt-12">
-            <h4 className="text-xl font-bold text-center mb-8 text-foreground">Infraestrutura Móvel</h4>
+            <h4 className="text-xl font-bold text-center mb-8 text-foreground">Infraestrutura Sugerida</h4>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {mobileInfrastructure.map((item, index) => {
                 const ItemIcon = item.icon;
@@ -234,7 +234,7 @@ export default function Technology() {
         {/* ITIL Practices */}
         <div className="mb-20">
           <h3 className="text-2xl font-bold text-center mb-12 text-foreground">
-            Gestão e Governança ITIL
+            Modelo de Gestão de TI e Governança
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {itilPractices.map((item, index) => (
