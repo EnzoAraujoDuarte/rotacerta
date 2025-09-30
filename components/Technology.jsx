@@ -3,55 +3,55 @@ import { Cloud, Shield, Zap, Database, Smartphone, MapPin, Camera, Phone, Lock, 
 export default function Technology() {
   const tmsSystems = [
     {
-      icon: MapPin,
-      title: 'Oracle Fusion Cloud SCM (Módulo Logística)',
-      description: 'Plataforma líder global em Supply Chain com módulos de IA/ML para otimização e previsão logística. Robustez e capacidade de integração via APIs com Shopify, SAP ERP e aplicativo interno de entregas (Flutter/TypeScript/PostgreSQL), ideal para escalar operações sem gargalos.',
-      features: ['Roteirização com IA/ML e previsão de demanda', 'Integração nativa via APIs REST', 'Gestão de pátio e execução logística', 'Escalabilidade para grandes clientes corporativos'],
-      recommended: 'Plataforma de classe mundial projetada para empresas que atendem grandes clientes corporativos, oferecendo recursos avançados de previsão e otimização com IA'
+      icon: Smartphone,
+      title: 'Aplicativo Flutter (Mobile)',
+      description: 'Aplicativo desenvolvido internamente em Flutter com roteirização por IA, captura digital de comprovantes (foto + assinatura), rastreamento GPS em tempo real e comunicação integrada. Backend em TypeScript e banco de dados PostgreSQL hospedados na AWS.',
+      features: ['Roteirização com IA/ML integrada', 'Captura digital: foto + assinatura', 'Rastreamento GPS em tempo real', 'Backend TypeScript + PostgreSQL AWS'],
+      recommended: 'Solução desenvolvida sob medida para as necessidades específicas da operação, com total controle sobre funcionalidades e evolução contínua pela equipe interna'
     },
     {
       icon: Database,
-      title: 'Snowflake Data Warehouse',
-      description: 'Plataforma de dados em nuvem de referência no mercado, projetada para performance e escalabilidade. Servirá como data warehouse central, ingerindo dados do Shopify, SAP ERP, banco PostgreSQL do app de entregas e Oracle SCM para visão unificada do negócio.',
-      features: ['Repositório centralizado (single source of truth)', 'Integração com Shopify, SAP, PostgreSQL e Oracle', 'Performance e escalabilidade em nuvem', 'Governança de dados e conformidade LGPD'],
-      recommended: 'Elimina ambiguidade de planilhas departamentais e consolida toda a informação em uma única fonte confiável para decisões estratégicas'
+      title: 'APIs de Integração (REST)',
+      description: 'APIs REST desenvolvidas internamente para integração completa entre Shopify (e-commerce B2B), SAP ERP (gestão empresarial) e aplicativo Flutter, garantindo sincronização automática de pedidos, estoque, entregas e faturamento em tempo real.',
+      features: ['API Shopify ↔ SAP ERP', 'API SAP ↔ App Flutter', 'API Shopify ↔ App Flutter', 'Webhooks e sincronização em tempo real'],
+      recommended: 'Ecossistema totalmente integrado elimina retrabalho manual, reduz erros e permite visibilidade completa da operação desde o pedido até a entrega final'
     },
     {
-      icon: Camera,
-      title: 'Tableau (Business Intelligence)',
-      description: 'Líder no quadrante mágico do Gartner, o Tableau se conecta ao Snowflake para transformar dados brutos em dashboards interativos e análises visuais poderosas, permitindo que a gestão tome decisões estratégicas com base em inteligência de dados em tempo real.',
-      features: ['Dashboards interativos em tempo real', 'Conexão nativa com Snowflake', 'Análises visuais avançadas', 'KPIs: OTIF, custo por entrega, taxa de sucesso'],
-      recommended: 'Proporciona visibilidade completa sobre indicadores críticos (OTIF, custo por entrega, taxa de sucesso na primeira tentativa) permitindo ações corretivas rápidas'
+      icon: MapPin,
+      title: 'Shopify (E-commerce B2B)',
+      description: 'Plataforma de e-commerce líder mundial onde farmácias, perfumarias e supermercados realizam pedidos de produtos de marcas líderes. Integração via APIs com SAP ERP e aplicativo Flutter para sincronização automática e rastreamento.',
+      features: ['Catálogo completo de produtos', 'Checkout B2B personalizado', 'Integração via APIs REST', 'Taxa: R$ 300 fixo + 0,5% sobre vendas'],
+      recommended: 'Plataforma robusta e escalável que oferece excelente experiência de compra B2B com baixo custo operacional e integrações nativas via APIs'
     },
     {
-      icon: Smartphone,
-      title: 'Salesforce Sales Cloud (CRM)',
-      description: 'Plataforma de CRM nº 1 do mundo, oferece escalabilidade e automações para gerenciar processo de vendas B2B complexo e garantir excelência no relacionamento com clientes. Integração nativa com Shopify e visão 360º do ciclo de vida dos clientes.',
-      features: ['Gestão completa do ciclo de vida B2B', 'Integração nativa com Shopify', 'Automações avançadas de vendas', 'Gestão de contratos e suporte pós-venda'],
-      recommended: 'Essencial para gerenciar relacionamento com grandes clientes corporativos (farmácias, perfumarias, supermercados) e garantir cumprimento de SLAs contratuais'
+      icon: Server,
+      title: 'SAP ERP (Gestão Empresarial)',
+      description: 'Sistema ERP líder mundial para gestão completa de vendas, estoque, logística e financeiro. Integrado via APIs ao Shopify e aplicativo Flutter, centralizando toda a operação empresarial com governança e conformidade.',
+      features: ['Módulos: vendas, estoque, logística, financeiro', 'Integração via APIs REST', 'Governança e conformidade', 'Licença anual: R$ 180.000'],
+      recommended: 'Plataforma enterprise robusta que garante controle total sobre processos críticos e prepara a empresa para crescimento e expansão B2C'
     }
   ];
 
   const itilPractices = [
     {
-      practice: 'ITIL 4 via Jira Service Management',
-      description: 'Gestão profissional de incidentes, requisições e mudanças com processo claro e auditável',
-      benefit: 'Processo estruturado para suporte tecnológico'
+      practice: 'Equipe DevOps e Desenvolvimento',
+      description: 'Engenheiro DevOps Senior + Desenvolvedor Full-Stack Pleno para gestão AWS, evolução do app Flutter e manutenção',
+      benefit: 'Desenvolvimento e infraestrutura geridos internamente'
     },
     {
-      practice: 'ISO/IEC 27001 e LGPD',
-      description: 'Conformidade gerenciada via ferramentas nativas de segurança (AWS Security Hub, Oracle Cloud Guard) e SIEM Datadog',
-      benefit: 'Monitoramento contínuo de conformidade'
+      practice: 'Gestão de Integrações',
+      description: 'Analista de Integrações Pleno focado nas APIs entre Shopify, SAP ERP e aplicativo Flutter',
+      benefit: 'Sincronização automática e monitoramento contínuo'
     },
     {
-      practice: 'Platform Ops (Equipe Interna)',
-      description: 'Engenheiro de Plataforma focado em gerenciar integrações via API entre sistemas (Shopify, SAP, Oracle SCM, app interno)',
-      benefit: 'Automações e saúde do ecossistema tecnológico'
+      practice: 'Segurança e Conformidade LGPD',
+      description: 'Ferramentas de segurança, monitoramento AWS e Microsoft Intune para gestão de 55 dispositivos móveis',
+      benefit: 'Proteção de dados e conformidade automatizada'
     },
     {
-      practice: 'Governança de Dados',
-      description: 'Controle de acesso granular (RBAC/ABAC) e gestão automatizada de consentimento LGPD',
-      benefit: 'Segurança máxima e conformidade automatizada'
+      practice: 'Infraestrutura AWS Escalável',
+      description: 'Servidores EC2, PostgreSQL RDS, S3, CloudFront com backup automático e alta disponibilidade',
+      benefit: 'Escalabilidade e resiliência para crescimento B2C'
     }
   ];
 
@@ -81,21 +81,21 @@ export default function Technology() {
   const mobileInfrastructure = [
     {
       icon: Phone,
-      title: 'Smartphones Corporativos (80 unidades)',
-      description: 'Aquisição de 80 smartphones corporativos para os colaboradores (30 da gestão/operações + 50 entregadores), gerenciados pela plataforma Microsoft Intune para aplicação de políticas de segurança e proteção de dados',
-      specs: ['80 smartphones corporativos', 'Gestão via Microsoft Intune (UEM)', 'Políticas de segurança aplicadas', 'Proteção de dados em campo']
+      title: 'Smartphones Corporativos (55 unidades)',
+      description: 'Aquisição de 55 smartphones corporativos para entregadores e gestores, gerenciados pela plataforma Microsoft Intune (MDM) para aplicação de políticas de segurança e proteção de dados em campo.',
+      specs: ['55 smartphones corporativos', 'Microsoft Intune (MDM): R$ 1.800/mês', 'Políticas de segurança aplicadas', 'Wipe remoto em caso de perda/roubo']
     },
     {
       icon: Zap,
-      title: 'Arquitetura Multi-Cloud',
-      description: 'Utilização de Oracle Cloud Infrastructure (OCI) para Oracle SCM e AWS para Snowflake, backend TypeScript e banco PostgreSQL do aplicativo, garantindo que cada sistema rode em seu ambiente otimizado sem vendor lock-in',
-      specs: ['Oracle Cloud (OCI) para Oracle SCM', 'AWS para Snowflake e app interno', 'Integração entre clouds via APIs', 'Redundância e alta disponibilidade']
+      title: 'Infraestrutura AWS Completa',
+      description: 'Infraestrutura completa na AWS incluindo servidores EC2 (backend TypeScript), banco PostgreSQL RDS, storage S3, CDN CloudFront, backup automático e alta disponibilidade em múltiplas zonas.',
+      specs: ['EC2: backend TypeScript', 'PostgreSQL RDS: banco de dados', 'S3 + CloudFront: storage e CDN', 'Custo mensal: R$ 8.000']
     },
     {
       icon: Lock,
-      title: 'Segurança com Datadog e Okta',
-      description: 'SIEM Datadog para monitoramento de segurança em tempo real em todo ecossistema e Okta como plataforma de gestão de identidade (Single Sign-On) para acesso seguro a Shopify, SAP, Oracle SCM e backend do app',
-      specs: ['SIEM Datadog: monitoramento 24/7', 'Okta: SSO e gestão de identidade', 'Alertas de atividades suspeitas', 'Princípio do menor privilégio']
+      title: 'Segurança e Monitoramento',
+      description: 'Ferramentas de segurança e monitoramento para proteção da infraestrutura AWS, dados sensíveis e conformidade com LGPD, incluindo alertas em tempo real e análise de logs.',
+      specs: ['Monitoramento AWS 24/7', 'Ferramentas de segurança: R$ 3.500/mês', 'Conformidade LGPD', 'Backup automático e disaster recovery']
     }
   ];
 
@@ -129,15 +129,15 @@ export default function Technology() {
             Soluções de <span className="text-gradient">Tecnologia</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Proposta de solução tecnológica integrada com plataformas de classe mundial 
-            (Oracle, Snowflake, Tableau, Salesforce) e infraestrutura multi-cloud robusta.
+            Ecossistema tecnológico próprio desenvolvido internamente: aplicativo Flutter com IA, 
+            APIs de integração robustas (Shopify-SAP-App) e infraestrutura AWS escalável.
           </p>
         </div>
 
         {/* TMS Solutions */}
         <div className="mb-20">
           <h3 className="text-2xl font-bold text-center mb-12 text-foreground">
-            Softwares Recomendados - Proposta de Solução
+            Plataformas Tecnológicas do Ecossistema
           </h3>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {tmsSystems.map((system, index) => {
@@ -179,9 +179,9 @@ export default function Technology() {
             <div className="w-16 h-16 bg-gradient-to-r from-nexus-primary to-nexus-accent rounded-xl flex items-center justify-center mx-auto mb-6">
               <Cloud className="w-8 h-8 text-white" />
             </div>
-            <h3 className="text-2xl font-bold mb-4 text-foreground">Infraestrutura Cloud SaaS</h3>
+            <h3 className="text-2xl font-bold mb-4 text-foreground">Infraestrutura AWS e Gestão</h3>
             <p className="text-base text-muted-foreground max-w-2xl mx-auto">
-              Modelo 100% Cloud SaaS eliminando necessidade de servidores locais, data centers próprios ou equipe de infraestrutura de TI
+              Infraestrutura 100% na nuvem AWS eliminando servidores locais, com equipe interna qualificada para gestão, desenvolvimento e evolução contínua
             </p>
           </div>
 

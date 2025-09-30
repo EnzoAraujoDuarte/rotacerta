@@ -3,46 +3,60 @@ import { DollarSign, TrendingUp, Target, Shield, Smartphone, Zap, BarChart3 } fr
 export default function InvestmentBenefits() {
   const investmentData = [
     {
-      category: 'Implementação e Treinamento',
-      amount: 'R$ 40.000',
+      category: 'Desenvolvimento App Flutter',
+      amount: 'R$ 120.000',
       period: '(investimento único)',
-      description: 'Taxa de implementação e treinamento das plataformas Oracle Fusion Cloud SCM, Snowflake, Tableau e Salesforce, incluindo integração com Shopify, SAP ERP e aplicativo interno (Flutter/TypeScript/PostgreSQL).',
-      items: ['Setup Oracle Fusion Cloud SCM', 'Configuração Snowflake Data Warehouse', 'Implementação Tableau + dashboards', 'Setup Salesforce Sales Cloud', 'Integração com Shopify e SAP ERP', 'Treinamento de equipes']
+      description: 'Desenvolvimento e evolução do aplicativo Flutter com roteirização por IA, captura digital de comprovantes (foto + assinatura), integração com backend TypeScript e banco PostgreSQL, além de funcionalidades de rastreamento em tempo real.',
+      items: ['Roteirização com IA/ML integrada', 'Captura digital: foto + assinatura', 'Interface intuitiva para entregadores', 'Dashboard de gestão em tempo real', 'Integração com backend TypeScript + PostgreSQL']
     },
     {
-      category: 'Smartphones Corporativos',
-      amount: 'R$ 95.000',
+      category: 'Desenvolvimento de APIs de Integração',
+      amount: 'R$ 80.000',
       period: '(investimento único)',
-      description: 'Aquisição de 80 smartphones corporativos para toda a equipe (6 liderança + 24 analistas/assistentes + 50 entregadores), gerenciados via Microsoft Intune para garantir segurança e proteção de dados.',
-      items: ['80 smartphones corporativos', 'Gestão via Microsoft Intune', 'Políticas de segurança', 'Proteção contra perda/roubo']
+      description: 'Desenvolvimento de APIs REST para integração completa entre Shopify (e-commerce), SAP ERP (gestão empresarial) e aplicativo interno Flutter, garantindo sincronização automática de pedidos, estoque e entregas.',
+      items: ['API Shopify ↔ SAP ERP', 'API SAP ↔ App Flutter', 'API Shopify ↔ App Flutter', 'Webhooks e sincronização em tempo real', 'Documentação técnica completa']
     },
     {
-      category: 'Plataforma TMS (Oracle Fusion Cloud SCM)',
-      amount: 'R$ 14.000',
-      period: '/mês',
-      description: 'Licenciamento da plataforma Oracle Fusion Cloud SCM (Módulo Logística) com recursos de IA/ML para otimização de rotas, previsão de demanda e integração via APIs com Shopify, SAP ERP e aplicativo interno.',
-      items: ['Oracle SCM - módulo logística', 'Roteirização com IA/ML', 'Integração via APIs REST', 'Gestão de pátio e execução', 'Suporte Oracle 24x7']
+      category: 'Infraestrutura AWS e Smartphones',
+      amount: 'R$ 70.000',
+      period: '(investimento único)',
+      description: 'Migração e configuração da infraestrutura AWS (servidores, banco PostgreSQL, storage, CDN) e aquisição de 55 smartphones corporativos para entregadores e gestores, além da implementação de ferramentas de segurança e MDM.',
+      items: ['Migração e setup AWS (R$ 35.000)', 'Aquisição de 55 smartphones (R$ 35.000)', 'Implementação segurança e MDM (R$ 15.000)', 'Configuração backup e redundância']
     },
     {
-      category: 'Planos de Dados Móveis',
-      amount: 'R$ 6.000',
+      category: 'Infraestrutura AWS',
+      amount: 'R$ 8.000',
       period: '/mês',
-      description: 'Planos de dados móveis corporativos para 80 aparelhos (equipe administrativa e entregadores) garantindo conectividade para rastreamento em tempo real e acesso aos sistemas.',
-      items: ['80 linhas corporativas', 'Dados 4G/5G', 'Cobertura em 5 capitais', 'Suporte operadora 24x7']
+      description: 'Custos mensais da infraestrutura AWS incluindo servidores EC2, banco PostgreSQL RDS, storage S3, CDN CloudFront e serviços de backup automático com alta disponibilidade.',
+      items: ['Servidores EC2 (backend TypeScript)', 'Banco PostgreSQL RDS', 'Storage S3 + CDN CloudFront', 'Backup automático e redundância']
     },
     {
-      category: 'Licenças de Software (Snowflake, Tableau, Salesforce)',
-      amount: 'R$ 2.000',
+      category: 'Shopify + Planos Móveis',
+      amount: 'R$ 5.800',
       period: '/mês',
-      description: 'Licenciamento mensal do Snowflake Data Warehouse, Tableau para BI e Salesforce Sales Cloud para CRM, além de outras ferramentas complementares (Jira Service Management, Datadog, Okta).',
-      items: ['Snowflake Data Warehouse', 'Tableau (dashboards e BI)', 'Salesforce Sales Cloud', 'Jira Service Management', 'Datadog SIEM + Okta SSO']
+      description: 'Plataforma Shopify (plano fixo + 0,5% sobre vendas) para e-commerce B2B e planos de dados móveis corporativos para 55 aparelhos garantindo conectividade para rastreamento em tempo real.',
+      items: ['Shopify: R$ 300 fixo + 0,5% vendas', '55 planos de dados móveis: R$ 5.500', 'Cobertura 4G/5G em 5 capitais', 'Suporte operadora 24x7']
     },
     {
-      category: 'Equipe de Gestão de TI (Analista)',
-      amount: 'R$ 6.000',
+      category: 'Segurança e MDM',
+      amount: 'R$ 5.300',
       period: '/mês',
-      description: 'Salário de Analista de Operações e Tecnologia dedicado à gestão das integrações entre sistemas (Shopify, SAP, Oracle SCM, app interno), monitoramento de KPIs e suporte às operações tecnológicas.',
-      items: ['1 Analista de Operações e Tecnologia', 'Gestão de integrações via API', 'Monitoramento de KPIs', 'Suporte operacional']
+      description: 'Microsoft Intune para gestão de 55 dispositivos móveis (MDM) e ferramentas de segurança e monitoramento para proteger a infraestrutura AWS, dados sensíveis e garantir conformidade com LGPD.',
+      items: ['Microsoft Intune (55 dispositivos): R$ 1.800', 'Ferramentas segurança e monitoramento: R$ 3.500', 'Políticas de segurança aplicadas', 'Monitoramento 24x7']
+    },
+    {
+      category: 'Equipe de Tecnologia',
+      amount: 'R$ 33.200',
+      period: '/mês',
+      description: 'Equipe dedicada de 3 profissionais qualificados para gestão, desenvolvimento e manutenção da infraestrutura tecnológica: DevOps, desenvolvimento full-stack e gestão de integrações entre sistemas.',
+      items: ['1 Engenheiro DevOps Senior: R$ 15.000', '1 Desenvolvedor Full-Stack Pleno: R$ 10.000', '1 Analista de Integrações Pleno: R$ 8.200', 'Gestão completa do ecossistema tecnológico']
+    },
+    {
+      category: 'Licença SAP ERP',
+      amount: 'R$ 180.000',
+      period: '/ano',
+      description: 'Licenciamento anual do SAP ERP baseado no faturamento da empresa para gestão empresarial completa, incluindo módulos de vendas, estoque, logística e financeiro com integração via APIs ao Shopify e aplicativo Flutter.',
+      items: ['Licença baseada em faturamento', 'Módulos: vendas, estoque, logística, financeiro', 'Integração via APIs REST', 'Suporte SAP incluído']
     }
   ];
 
@@ -53,30 +67,31 @@ export default function InvestmentBenefits() {
     return sum;
   }, 0);
 
-  const initialInvestment = 135000;
-  const annualTotal = (monthlyTotal * 12) + initialInvestment;
+  const initialInvestment = 285000;
+  const sapAnnual = 180000;
+  const annualTotal = (monthlyTotal * 12) + initialInvestment + sapAnnual;
 
 
   const mainBenefits = [
     {
       icon: TrendingUp,
       title: 'Melhoria na Produtividade',
-      description: 'A roteirização automática via Oracle SCM e o app de rastreamento permitirão aumento estimado de 20% no número de entregas realizadas por veículo/dia, otimizando trajetos e reduzindo custos operacionais.',
-      metrics: ['20% mais entregas por veículo/dia', '15% redução em custos com combustível', 'Otimização de rotas por IA/ML'],
+      description: 'A roteirização automática com IA integrada ao aplicativo Flutter e o rastreamento em tempo real permitirão aumento estimado de 20% no número de entregas realizadas por veículo/dia, otimizando trajetos e reduzindo custos operacionais.',
+      metrics: ['20% mais entregas por veículo/dia', '15% redução em custos com combustível', 'Otimização de rotas por IA/ML no app Flutter'],
       color: 'from-nexus-primary to-nexus-accent'
     },
     {
       icon: Shield,
       title: 'Redução de Falhas e Retrabalho',
-      description: 'A digitalização do comprovante de entrega via aplicativo interno elimina perdas de documentos e reduz o tempo de faturamento de semanas para dias. Dados centralizados em Snowflake garantem conformidade com LGPD.',
-      metrics: ['Faturamento acelerado (semanas para dias)', '30% redução em devoluções e reentregas', 'Conformidade LGPD automatizada'],
+      description: 'A digitalização do comprovante de entrega via aplicativo Flutter (foto + assinatura) elimina perdas de documentos e reduz o tempo de faturamento de semanas para dias. Integração Shopify-SAP-App garante sincronização automática.',
+      metrics: ['Faturamento acelerado (semanas para dias)', '30% redução em devoluções e reentregas', 'Sincronização automática via APIs'],
       color: 'from-nexus-secondary to-nexus-primary'
     },
     {
       icon: Zap,
       title: 'Decisões Baseadas em Dados',
-      description: 'Dashboards do Tableau fornecerão métricas vitais em tempo real (OTIF, tempo médio por entrega, custo por km, taxa de sucesso, cumprimento de SLA), permitindo decisões estratégicas baseadas em dados concretos.',
-      metrics: ['KPIs em tempo real via Tableau', 'Visão 360° com Snowflake Data Warehouse', 'Redução de penalidades por SLA'],
+      description: 'Dashboard integrado ao app Flutter fornecerá métricas vitais em tempo real (OTIF, tempo médio por entrega, custo por km, taxa de sucesso, cumprimento de SLA), permitindo decisões estratégicas baseadas em dados concretos.',
+      metrics: ['KPIs em tempo real via dashboard', 'Dados centralizados no PostgreSQL AWS', 'Redução de penalidades por SLA'],
       color: 'from-nexus-accent to-nexus-secondary'
     }
   ];
@@ -115,9 +130,9 @@ export default function InvestmentBenefits() {
             Investimentos e <span className="text-gradient">Benefícios</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Plano de investimento estratégico para transformação digital completa com plataformas 
-            de classe mundial (Oracle, Snowflake, Tableau, Salesforce), infraestrutura multi-cloud e 
-            modelo de gestão profissional de TI baseado em ITIL 4 e conformidade ISO/IEC 27001.
+            Plano de investimento estratégico focado no desenvolvimento do aplicativo Flutter próprio 
+            com roteirização IA, APIs de integração (Shopify-SAP-App), infraestrutura AWS escalável e 
+            equipe qualificada de tecnologia para gestão completa do ecossistema.
           </p>
         </div>
 
@@ -252,10 +267,10 @@ export default function InvestmentBenefits() {
               Transformação Comprovada com Resultados Reais
             </h3>
             <p className="text-xl text-white/90 mb-6 max-w-3xl mx-auto leading-relaxed">
-              Este plano de investimento oferece um caminho claro para modernizar a operação, 
-              encantar clientes com transparência e construir uma base tecnológica sólida para 
-              crescimento futuro, integrando de forma inteligente o ecossistema atual (Shopify, 
-              SAP ERP e aplicativo interno) com novas plataformas de classe mundial.
+              Este plano de investimento oferece um caminho claro para modernizar a operação com 
+              desenvolvimento próprio do aplicativo Flutter com IA, APIs robustas de integração e 
+              infraestrutura AWS escalável, construindo uma base tecnológica sólida para crescimento 
+              futuro e expansão para B2C com logística last-mile.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-white text-nexus-primary font-semibold px-8 py-4 rounded-lg hover:bg-white/90 transition-colors duration-300 shadow-lg">
