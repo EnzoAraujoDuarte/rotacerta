@@ -1,0 +1,232 @@
+import { Building2, Users, Target, Lightbulb, Crown, Briefcase, TrendingUp, Truck, Database, HeadphonesIcon, Package, UserCheck, Clipboard } from 'lucide-react';
+
+export default function AboutCompany() {
+  const orgStructure = {
+    ceo: {
+      name: "CEO",
+      subtitle: "Chief Executive Officer",
+      icon: Crown,
+      color: "from-red-600 to-red-500"
+    },
+    managers: [
+      { name: "Gerente de Operações", icon: Package, color: "from-blue-600 to-blue-500", team: 1 },
+      { name: "Gerente de Tecnologia", icon: Database, color: "from-purple-600 to-purple-500", team: 1 },
+      { name: "Gerente Comercial", icon: TrendingUp, color: "from-green-600 to-green-500", team: 1 },
+      { name: "Gerente Financeiro", icon: Briefcase, color: "from-orange-600 to-orange-500", team: 1 },
+      { name: "Gerente de RH", icon: Users, color: "from-pink-600 to-pink-500", team: 1 }
+    ],
+    drivers: {
+      total: 50,
+      distribution: [
+        { city: "São Paulo", count: 18 },
+        { city: "Rio de Janeiro", count: 12 },
+        { city: "Belo Horizonte", count: 8 },
+        { city: "Curitiba", count: 7 },
+        { city: "Brasília", count: 5 }
+      ]
+    }
+  };
+
+  const CeoIcon = orgStructure.ceo.icon;
+
+  return (
+    <section id="sobre" className="min-h-screen py-20 section-gradient flex flex-col justify-center">
+      <div className="container mx-auto px-4">
+        {/* Header */}
+        <div className="text-center mb-12 md:mb-16 fade-in-up px-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6">
+            Sobre a <span className="text-gradient">Rota Certa Logtech</span>
+          </h2>
+          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            Fundada em 2019, a Rota Certa Logtech nasceu da visão de transformar a logística urbana brasileira 
+            através da tecnologia. Somos especialistas em entregas de última milha para e-commerce B2C, 
+            conectando lojas virtuais aos consumidores finais com velocidade, precisão e transparência. 
+            Nossa infraestrutura tecnológica integra SAP S/4HANA para gestão empresarial e APIs diretas 
+            com plataformas como Shopify, permitindo sincronização automática de pedidos 
+            e rastreamento em tempo real.
+          </p>
+        </div>
+
+        {/* Mission Statement */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+          <div className="fade-in-up">
+            <h3 className="text-2xl font-bold mb-6 text-foreground">
+              Nossa Missão
+            </h3>
+            <p className="text-base text-muted-foreground mb-6 leading-relaxed">
+              Ser a principal referência em logística urbana inteligente no Brasil, revolucionando 
+              a última milha através de tecnologia de ponta, inteligência artificial e automação. 
+              Nosso compromisso é proporcionar entregas ultrarrápidas, totalmente rastreáveis e com 
+              experiência superior ao consumidor final, tornando-nos o parceiro estratégico ideal 
+              para e-commerces que buscam excelência operacional. Através da integração total com 
+              SAP S/4HANA e principais plataformas de e-commerce, garantimos processos otimizados, 
+              redução de custos operacionais em até 30% e visibilidade completa em tempo real.
+            </p>
+            <div className="space-y-4">
+              <div className="flex items-start space-x-3">
+                <Target className="w-6 h-6 text-nexus-primary mt-1" />
+                <div>
+                  <h4 className="font-semibold text-foreground">Eficiência Operacional</h4>
+                  <p className="text-muted-foreground">Roteirização inteligente por IA integrada ao SAP S/4HANA que otimiza trajetos, reduz custos e aumenta a produtividade.</p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <Lightbulb className="w-6 h-6 text-nexus-primary mt-1" />
+                <div>
+                  <h4 className="font-semibold text-foreground">Visibilidade Total</h4>
+                  <p className="text-muted-foreground">Rastreamento em tempo real integrado com Shopify que proporciona transparência completa para clientes e consumidores.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="grid grid-cols-2 gap-6 slide-in-right">
+            <div className="card-hover text-center">
+              <Building2 className="w-12 h-12 text-nexus-primary mx-auto mb-4" />
+              <h4 className="text-2xl font-bold text-foreground mb-2">Médio Porte</h4>
+              <p className="text-muted-foreground">Crescimento de 180% ao ano</p>
+            </div>
+            <div className="card-hover text-center">
+              <Users className="w-12 h-12 text-nexus-primary mx-auto mb-4" />
+              <h4 className="text-2xl font-bold text-foreground mb-2">80</h4>
+              <p className="text-muted-foreground">Profissionais especializados</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Company Info */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16 px-4">
+          <div className="card-hover text-center">
+            <div className="w-16 h-16 bg-gradient-to-r from-nexus-primary to-nexus-accent rounded-full flex items-center justify-center mx-auto mb-6">
+              <Building2 className="w-8 h-8 text-white" />
+            </div>
+            <h3 className="text-xl font-bold mb-4 text-foreground">Razão Social</h3>
+            <p className="text-muted-foreground mb-2">Rota Certa Logtech Ltda.</p>
+            <p className="text-sm text-muted-foreground">
+              Empresa de logística urbana e tecnologia para e-commerce
+            </p>
+          </div>
+
+          <div className="card-hover text-center">
+            <div className="w-16 h-16 bg-gradient-to-r from-nexus-secondary to-nexus-primary rounded-full flex items-center justify-center mx-auto mb-6">
+              <Target className="w-8 h-8 text-white" />
+            </div>
+            <h3 className="text-xl font-bold mb-4 text-foreground">Atuação</h3>
+            <p className="text-muted-foreground mb-2">Logística Last-Mile B2C</p>
+            <p className="text-sm text-muted-foreground">
+              São Paulo, Rio de Janeiro, Belo Horizonte, Curitiba e Brasília
+            </p>
+          </div>
+
+          <div className="card-hover text-center">
+            <div className="w-16 h-16 bg-gradient-to-r from-nexus-accent to-nexus-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+              <Users className="w-8 h-8 text-white" />
+            </div>
+            <h3 className="text-xl font-bold mb-4 text-foreground">Equipe</h3>
+            <p className="text-muted-foreground mb-2">50 Entregadores Próprios</p>
+            <p className="text-sm text-muted-foreground">
+              30 profissionais em gestão, operações e tecnologia
+            </p>
+          </div>
+        </div>
+
+        {/* Organogram Section */}
+        <div className="mt-20">
+          <div className="text-center mb-12 md:mb-16 fade-in-up px-4">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6">
+              Estrutura <span className="text-gradient">Organizacional</span>
+            </h3>
+            <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              Estrutura organizacional enxuta e eficiente, composta por 80 profissionais 
+              distribuídos estrategicamente em 3 níveis hierárquicos (CEO, Gerentes e Time Operacional).
+            </p>
+          </div>
+
+          <div className="max-w-7xl mx-auto">
+            {/* CEO Level */}
+            <div className="flex justify-center mb-8">
+              <div className="card-hover text-center max-w-xs hover-lift">
+                <div className={`w-24 h-24 bg-gradient-to-r ${orgStructure.ceo.color} rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-hero`}>
+                  <CeoIcon className="w-12 h-12 text-white" />
+                </div>
+                <h4 className="text-2xl font-bold mb-1 text-foreground">{orgStructure.ceo.name}</h4>
+                <p className="text-sm text-muted-foreground font-medium">{orgStructure.ceo.subtitle}</p>
+              </div>
+            </div>
+
+            {/* Arrow */}
+            <div className="flex justify-center mb-6">
+              <div className="flex flex-col items-center">
+                <div className="w-1 h-12 bg-gradient-to-b from-nexus-primary to-nexus-primary/80"></div>
+                <div className="w-3 h-3 rotate-45 bg-nexus-primary transform translate-y-[-6px]"></div>
+              </div>
+            </div>
+
+            {/* Managers */}
+            <div className="flex justify-center mb-6">
+              <div className="inline-block px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-500 rounded-full text-white font-bold text-lg shadow-lg">
+                GERENTES (5)
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 md:gap-6 mb-8 px-4">
+              {orgStructure.managers.map((manager, index) => {
+                const ManagerIcon = manager.icon;
+                return (
+                  <div key={index} className="card-hover text-center hover-lift">
+                    <div className={`w-16 h-16 md:w-20 md:h-20 bg-gradient-to-r ${manager.color} rounded-xl flex items-center justify-center mx-auto mb-3 md:mb-4 shadow-card`}>
+                      <ManagerIcon className="w-8 h-8 md:w-10 md:h-10 text-white" />
+                    </div>
+                    <h5 className="text-xs sm:text-sm md:text-base font-bold text-foreground mb-2 leading-tight">{manager.name}</h5>
+                    <p className="text-xs md:text-sm text-muted-foreground">{manager.team} colaborador</p>
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* Drivers Distribution */}
+            <div className="mt-12">
+              <div className="flex justify-center mb-6">
+                <div className="inline-block px-8 py-3 bg-gradient-to-r from-orange-600 to-orange-500 rounded-full text-white font-bold text-lg shadow-lg">
+                  ENTREGADORES (50)
+                </div>
+              </div>
+              
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 md:gap-6 px-4">
+                {orgStructure.drivers.distribution.map((location, index) => (
+                  <div key={index} className="card-hover text-center hover-lift bg-gradient-to-br from-amber-50 to-orange-100 dark:from-orange-900/20 dark:to-amber-900/20 border-2 border-orange-200 dark:border-orange-800">
+                    <div className="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-r from-orange-600 to-orange-500 rounded-xl flex items-center justify-center mx-auto mb-3 md:mb-4 shadow-card">
+                      <Truck className="w-7 h-7 md:w-8 md:h-8 text-white" />
+                    </div>
+                    <h5 className="text-xl md:text-2xl font-bold text-orange-700 dark:text-orange-400 mb-1">{location.count}</h5>
+                    <p className="text-xs md:text-sm text-muted-foreground font-medium">{location.city}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Summary Stats */}
+            <div className="mt-12 md:mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-5xl mx-auto px-4">
+              <div className="text-center p-4 md:p-6 bg-gradient-to-br from-red-500/10 to-red-600/10 rounded-xl border border-red-500/30 shadow-card">
+                <div className="text-3xl md:text-4xl font-bold text-red-600 mb-1 md:mb-2">80</div>
+                <p className="text-xs md:text-sm text-muted-foreground font-medium">Total de Colaboradores</p>
+              </div>
+              <div className="text-center p-4 md:p-6 bg-gradient-to-br from-blue-500/10 to-blue-600/10 rounded-xl border border-blue-500/30 shadow-card">
+                <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-1 md:mb-2">6</div>
+                <p className="text-xs md:text-sm text-muted-foreground font-medium">Liderança (CEO + Gerentes)</p>
+              </div>
+              <div className="text-center p-4 md:p-6 bg-gradient-to-br from-teal-500/10 to-teal-600/10 rounded-xl border border-teal-500/30 shadow-card">
+                <div className="text-3xl md:text-4xl font-bold text-teal-600 mb-1 md:mb-2">24</div>
+                <p className="text-xs md:text-sm text-muted-foreground font-medium">Analistas + Assistentes</p>
+              </div>
+              <div className="text-center p-4 md:p-6 bg-gradient-to-br from-orange-600/10 to-orange-700/10 rounded-xl border border-orange-600/30 shadow-card">
+                <div className="text-3xl md:text-4xl font-bold text-orange-700 dark:text-orange-500 mb-1 md:mb-2">50</div>
+                <p className="text-xs md:text-sm text-muted-foreground font-medium">Entregadores em Campo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

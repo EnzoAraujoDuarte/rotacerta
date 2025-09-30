@@ -1,6 +1,6 @@
-import { DollarSign, TrendingUp, Target, Shield, Smartphone } from 'lucide-react';
+import { DollarSign, TrendingUp, Target, Shield, Smartphone, Zap, BarChart3 } from 'lucide-react';
 
-export default function Investment() {
+export default function InvestmentBenefits() {
   const investmentData = [
     {
       category: 'Hardware - Smartphones e Dispositivos Móveis',
@@ -49,25 +49,43 @@ export default function Investment() {
   const initialInvestment = 150000;
   const annualTotal = (monthlyTotal * 12) + initialInvestment;
 
-  const benefits = [
+  const savingsBreakdown = [
+    { item: 'Redução combustível e pedágios (35%)', value: 'R$ 58.000/mês' },
+    { item: 'Redução equipe administrativa (67%)', value: 'R$ 32.000/mês' },
+    { item: 'Redução equipe atendimento (72%)', value: 'R$ 21.000/mês' },
+    { item: 'Eliminação perda canhotos (15% faturamento)', value: 'R$ 18.000/mês' },
+    { item: 'Total de economia operacional mensal', value: 'R$ 129.000/mês', highlight: true }
+  ];
+
+  const mainBenefits = [
     {
       icon: TrendingUp,
-      title: 'ROI Alcançado',
-      value: '5 meses',
-      description: 'Payback em 5 meses com economia de R$ 129k/mês'
-    },
-    {
-      icon: Target,
-      title: 'Redução de Custos',
-      value: '35%',
-      description: 'Economia em combustível, administrativo e atendimento'
+      title: 'Redução de Custos Operacionais',
+      description: 'A roteirização inteligente por IA analisa em tempo real o trânsito, prioridades de entrega e perfil histórico de cada endereço, otimizando dinamicamente as rotas e reduzindo drasticamente custos com combustível, pedágios e horas extras.',
+      metrics: ['35% economia em combustível mensal', '45% mais entregas por entregador/dia', '28% redução no tempo médio de rota'],
+      color: 'from-nexus-primary to-nexus-accent'
     },
     {
       icon: Shield,
+      title: 'Visibilidade e Transparência Total',
+      description: 'Rastreamento GPS em tempo real via portal web e notificações proativas automáticas (SMS/WhatsApp) eliminaram completamente a ansiedade do "onde está meu pedido?". Clientes recebem link de tracking e ETA dinâmico atualizado a cada 5 minutos.',
+      metrics: ['72% redução em ligações ao SAC', 'NPS subiu de 45 para 87 pontos', '100% das entregas com foto geo-localizada'],
+      color: 'from-nexus-secondary to-nexus-primary'
+    },
+    {
+      icon: Zap,
       title: 'Aumento de Produtividade',
-      value: '45%',
-      description: 'Mais entregas por entregador com roteirização IA'
+      description: 'Comprovação digital com foto + assinatura na tela eliminou completamente canhotos de papel, acelerando o ciclo de faturamento de 15 dias para 24-48 horas. Equipe administrativa reduziu de 12 para 4 pessoas, focando em análise estratégica.',
+      metrics: ['67% redução no tempo administrativo', 'Ciclo de faturamento reduzido para 24-48h', 'Zero perda de comprovantes (antes 15%/mês)'],
+      color: 'from-nexus-accent to-nexus-secondary'
     }
+  ];
+
+  const kpis = [
+    { metric: '35%', label: 'Redução custos', description: 'Combustível e tempo' },
+    { metric: '72%', label: 'Menos chamadas', description: 'Atendimento ao cliente' },
+    { metric: '45%', label: 'Mais produtivo', description: 'Entregas por entregador' },
+    { metric: '87', label: 'NPS Alcançado', description: 'De 45 para 87 pontos' }
   ];
 
   const justifications = [
@@ -88,27 +106,19 @@ export default function Investment() {
     }
   ];
 
-  const savingsBreakdown = [
-    { item: 'Redução combustível e pedágios (35%)', value: 'R$ 58.000/mês' },
-    { item: 'Redução equipe administrativa (67%)', value: 'R$ 32.000/mês' },
-    { item: 'Redução equipe atendimento (72%)', value: 'R$ 21.000/mês' },
-    { item: 'Eliminação perda canhotos (15% faturamento)', value: 'R$ 18.000/mês' },
-    { item: 'Total de economia operacional mensal', value: 'R$ 129.000/mês', highlight: true }
-  ];
-
   return (
-    <section id="investimentos" className="min-h-screen py-20 section-gradient flex flex-col justify-center">
+    <section id="investimentos" className="min-h-screen py-20 bg-background flex flex-col justify-center">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16 fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Plano de <span className="text-gradient">Investimentos</span>
+            Investimentos e <span className="text-gradient">Benefícios</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Investimento estratégico de R$ 1,43 milhão no primeiro ano (CAPEX + OPEX) para transformação 
-            digital completa da Rota Certa Logtech. Com ROI alcançado em apenas 5 meses através de economia 
-            operacional de 35%, aumento de 45% na produtividade e crescimento de 180% na receita anual, 
-            o projeto superou todas as expectativas e posicionou a empresa como referência tecnológica no setor.
+            digital completa. Com ROI alcançado em apenas 5 meses através de economia operacional de 35%, 
+            aumento de 45% na produtividade e crescimento de 180% na receita anual, o projeto superou 
+            todas as expectativas e posicionou a empresa como referência tecnológica no setor.
           </p>
         </div>
 
@@ -179,9 +189,9 @@ export default function Investment() {
         {/* ROI Analysis */}
         <div className="mb-20">
           <h3 className="text-3xl font-bold text-center mb-12 text-foreground">
-            Análise de ROI e Economia
+            Análise de ROI e Benefícios Alcançados
           </h3>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
             {/* Investment */}
             <div className="card-hover">
               <h4 className="text-2xl font-bold text-foreground mb-6 flex items-center">
@@ -198,7 +208,7 @@ export default function Investment() {
             <div className="card-hover">
               <h4 className="text-2xl font-bold text-foreground mb-6 flex items-center">
                 <TrendingUp className="w-8 h-8 text-green-600 mr-3" />
-                Economia Esperada
+                Economia Alcançada
               </h4>
               <div className="space-y-3">
                 {savingsBreakdown.map((saving, index) => (
@@ -223,41 +233,59 @@ export default function Investment() {
           </div>
 
           {/* Payback */}
-          <div className="mt-8 text-center">
+          <div className="text-center">
             <div className="inline-block p-6 bg-gradient-to-r from-green-600 to-green-500 rounded-2xl text-white shadow-hero">
               <p className="text-sm text-white/80 mb-2">ROI Alcançado (Payback Period)</p>
               <p className="text-5xl font-bold mb-2">5 meses</p>
-              <p className="text-base text-white/90 mb-2">Economia mensal: R$ 129.000 | Investimento mensal: R$ 132.000</p>
-              <p className="text-sm text-white/80">Investimento inicial de R$ 195.000 recuperado em 5 meses</p>
-              <p className="text-xs text-white/70 mt-3">A partir do 6º mês: lucro líquido adicional de R$ 129.000/mês</p>
+              <p className="text-base text-white/90 mb-2">Economia mensal: R$ 129.000 | Investimento mensal: R$ 107.000</p>
+              <p className="text-sm text-white/80">Investimento inicial de R$ 150.000 recuperado em 5 meses</p>
+              <p className="text-xs text-white/70 mt-3">A partir do 6º mês: lucro líquido adicional de R$ 22.000/mês</p>
             </div>
           </div>
         </div>
 
-        {/* Expected Benefits */}
+        {/* Main Benefits */}
         <div className="mb-20">
           <h3 className="text-3xl font-bold text-center mb-12 text-foreground">
-            Benefícios Esperados
+            Benefícios Conquistados
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {benefits.map((benefit, index) => {
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+            {mainBenefits.map((benefit, index) => {
               const BenefitIcon = benefit.icon;
               return (
-                <div key={index} className="card-hover text-center hover-lift">
-                  <div className="w-16 h-16 bg-gradient-to-r from-nexus-secondary to-nexus-primary rounded-xl flex items-center justify-center mx-auto mb-6">
+                <div key={index} className="card-hover hover-lift group">
+                  <div className={`w-16 h-16 bg-gradient-to-r ${benefit.color} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
                     <BenefitIcon className="w-8 h-8 text-white" />
                   </div>
-                  <h4 className="text-3xl font-bold text-nexus-primary mb-2">{benefit.value}</h4>
-                  <h5 className="text-xl font-bold text-foreground mb-4">{benefit.title}</h5>
-                  <p className="text-muted-foreground leading-relaxed">{benefit.description}</p>
+                  <h4 className="text-xl font-bold text-foreground mb-4">{benefit.title}</h4>
+                  <p className="text-muted-foreground mb-6 leading-relaxed">{benefit.description}</p>
+                  <div className="space-y-3">
+                    {benefit.metrics.map((metric, idx) => (
+                      <div key={idx} className="flex items-center p-3 bg-background-secondary rounded-lg border border-border">
+                        <div className="w-2 h-2 bg-nexus-primary rounded-full mr-3"></div>
+                        <span className="text-sm font-medium text-foreground">{metric}</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               );
             })}
           </div>
+
+          {/* KPIs */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {kpis.map((kpi, index) => (
+              <div key={index} className="text-center p-6 bg-gradient-to-br from-nexus-primary/5 to-nexus-accent/5 rounded-xl border border-nexus-primary/20 hover:border-nexus-primary/40 transition-colors duration-300">
+                <div className="text-3xl font-bold text-nexus-primary mb-2">{kpi.metric}</div>
+                <div className="text-lg font-semibold text-foreground mb-1">{kpi.label}</div>
+                <div className="text-sm text-muted-foreground">{kpi.description}</div>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Investment Justification */}
-        <div>
+        <div className="mb-16">
           <h3 className="text-3xl font-bold text-center mb-12 text-foreground">
             Justificativa Estratégica
           </h3>
@@ -275,22 +303,27 @@ export default function Investment() {
           </div>
         </div>
 
-        {/* Call to Action */}
-        <div className="text-center mt-16">
-          <div className="bg-card rounded-2xl p-8 shadow-card border border-border">
-            <h3 className="text-2xl font-bold text-foreground mb-4">
-              Este investimento é o catalisador da nossa transformação
+        {/* Final CTA */}
+        <div className="text-center">
+          <div className="bg-gradient-to-r from-nexus-secondary via-nexus-primary to-nexus-accent rounded-2xl p-8 text-white shadow-hero">
+            <BarChart3 className="w-16 h-16 mx-auto mb-6" />
+            <h3 className="text-3xl font-bold mb-4">
+              Transformação Comprovada com Resultados Reais
             </h3>
-            <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
+            <p className="text-xl text-white/90 mb-6 max-w-3xl mx-auto leading-relaxed">
               Este investimento de R$ 1,43 milhão no primeiro ano não foi um custo, mas o principal 
               catalisador que transformou a Rota Certa Logtech em referência tecnológica no setor. 
               Com ROI em 5 meses, economia operacional de R$ 129k mensais e crescimento de 180% na receita, 
-              o projeto superou todas as expectativas e posicionou a empresa para competir de igual para 
-              igual com grandes players nacionais, conquistando 8 novos clientes enterprise no último ano.
+              o projeto superou todas as expectativas e conquistou 8 novos clientes enterprise no último ano.
             </p>
-            <button className="btn-hero">
-              Baixar Plano Detalhado (PDF)
-            </button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button className="bg-white text-nexus-primary font-semibold px-8 py-4 rounded-lg hover:bg-white/90 transition-colors duration-300 shadow-lg">
+                Baixar Plano Detalhado (PDF)
+              </button>
+              <button className="border-2 border-white text-white font-semibold px-8 py-4 rounded-lg hover:bg-white hover:text-nexus-primary transition-colors duration-300">
+                Solicitar Apresentação Executiva
+              </button>
+            </div>
           </div>
         </div>
       </div>
