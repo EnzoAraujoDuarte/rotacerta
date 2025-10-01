@@ -69,11 +69,11 @@ export default function AboutCompany() {
             </h3>
             <p className="text-base text-muted-foreground mb-6 leading-relaxed">
               Ser a principal referência em logística urbana inteligente no Brasil, revolucionando 
-              a última milha através de tecnologia de ponta, inteligência artificial e automação. 
+              o mercado através de tecnologia de ponta, inteligência artificial e automação. 
               Nosso compromisso é proporcionar entregas ultrarrápidas e totalmente rastreáveis, 
               atendendo farmácias, perfumarias e supermercados (B2B) e expandindo para o consumidor 
               final (B2C), tornando-nos o parceiro estratégico ideal para quem busca excelência 
-              operacional. Através da integração com SAP ERP e Shopify, garantimos processos 
+              operacional. Através da integração com SAP ERP, Shopify e nosso app de rastreamento, garantimos processos 
               otimizados, redução de custos operacionais e visibilidade completa em tempo real.
             </p>
             <div className="space-y-4">
