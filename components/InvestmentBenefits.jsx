@@ -145,14 +145,14 @@ export default function InvestmentBenefits() {
             <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border-l-4 border-blue-500">
               <h4 className="text-xl font-bold text-blue-600 dark:text-blue-400 mb-3">💰 CAPEX (Capital Expenditure)</h4>
               <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-                <strong>Despesa de Capital:</strong> Investimento inicial único para aquisição de ativos de longo prazo 
+                <strong>Despesa de Capital:</strong> Investimento pontual ou esporádico para aquisição de ativos de longo prazo 
                 (desenvolvimento de software, infraestrutura, equipamentos). Gera propriedade e pode ser depreciado ao 
                 longo do tempo para fins contábeis e fiscais.
               </p>
               <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
                 <p className="text-sm font-semibold text-blue-700 dark:text-blue-300">Neste projeto:</p>
                 <p className="text-2xl font-bold text-blue-600 dark:text-blue-400">R$ 285.000</p>
-                <p className="text-xs text-muted-foreground mt-1">Investimento único</p>
+                <p className="text-xs text-muted-foreground mt-1">Investimento único ou pontual</p>
               </div>
             </div>
 
