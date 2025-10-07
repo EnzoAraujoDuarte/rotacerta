@@ -19,7 +19,7 @@ export default function Footer() {
   ];
 
   const technologyLinks = [
-    { label: 'TMS - Sistema de Gestão', href: '#tecnologia' },
+    { label: 'Sistema de Gestão', href: '#tecnologia' },
     { label: 'App do Entregador', href: '#tecnologia' },
     { label: 'Dashboard Gerencial', href: '#tecnologia' },
     { label: 'Portal do Cliente', href: '#tecnologia' }

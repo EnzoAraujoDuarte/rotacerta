@@ -42,7 +42,7 @@ export default function InvestmentBenefits() {
       amount: 'R$ 5.300',
       period: '/mês',
       description: 'Microsoft Intune para gestão de 55 dispositivos móveis (MDM) e ferramentas de segurança e monitoramento para proteger a infraestrutura AWS, dados sensíveis e garantir conformidade com LGPD.',
-      items: ['Microsoft Intune (55 dispositivos): R$ 1.800', 'Ferramentas segurança e monitoramento: R$ 3.500', 'Políticas de segurança aplicadas', 'Monitoramento 24x7']
+      items: ['Microsoft Intune (55 dispositivos): R$ 1.800', 'AWS IAM, MFA e Cognito: R$ 800', 'AWS Certificate Manager, KMS e Encryption: R$ 1.200', 'CloudWatch, CloudTrail e GuardDuty: R$ 1.500']
     },
     {
       category: 'Equipe de TI Completa',
@@ -292,6 +292,128 @@ export default function InvestmentBenefits() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* Revenue and Profit Expectations */}
+        <div className="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950/20 dark:to-emerald-950/20 rounded-2xl p-8 border-2 border-green-200 dark:border-green-800">
+          <div className="text-center mb-10">
+            <h3 className="text-3xl font-bold text-foreground mb-4">
+              📈 Expectativa de Faturamento e Lucro
+            </h3>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Projeções financeiras baseadas na operação atual e expansão planejada para B2C
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
+            {/* Monthly Revenue */}
+            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border-2 border-green-500">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <DollarSign className="w-8 h-8 text-white" />
+                </div>
+                <h4 className="text-sm font-semibold text-green-600 dark:text-green-400 uppercase tracking-wider mb-2">Faturamento Mensal Médio</h4>
+                <p className="text-4xl font-bold text-green-600 dark:text-green-400 mb-2">R$ 520.000</p>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Baseado em 12.000 entregas/mês com ticket médio de R$ 43,00 por entrega (B2B e B2C)
+                </p>
+              </div>
+            </div>
+
+            {/* Operating Costs */}
+            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border-2 border-orange-500">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <TrendingUp className="w-8 h-8 text-white" />
+                </div>
+                <h4 className="text-sm font-semibold text-orange-600 dark:text-orange-400 uppercase tracking-wider mb-2">Custos Totais Mensais</h4>
+                <p className="text-4xl font-bold text-orange-600 dark:text-orange-400 mb-2">R$ 420.000</p>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  OPEX tecnológico (R$ 119.300) + SAP anualizado (R$ 15.000) + operacionais (R$ 285.700: pessoal, combustível, manutenção, etc.)
+                </p>
+              </div>
+            </div>
+
+            {/* Net Profit */}
+            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border-2 border-blue-500">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <Target className="w-8 h-8 text-white" />
+                </div>
+                <h4 className="text-sm font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-wider mb-2">Lucro Líquido Mensal</h4>
+                <p className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">R$ 100.000</p>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Margem líquida de 19,2% - padrão saudável para empresas de logística urbana last-mile
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Annual Projection */}
+          <div className="bg-gradient-to-r from-nexus-primary to-nexus-accent rounded-xl p-8 text-white shadow-xl">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+              <div>
+                <p className="text-white/80 text-sm uppercase tracking-wider mb-2">Faturamento Anual</p>
+                <p className="text-3xl font-bold">R$ 6.240.000</p>
+              </div>
+              <div>
+                <p className="text-white/80 text-sm uppercase tracking-wider mb-2">Lucro Líquido Anual</p>
+                <p className="text-3xl font-bold">R$ 1.200.000</p>
+              </div>
+              <div>
+                <p className="text-white/80 text-sm uppercase tracking-wider mb-2">ROI do Investimento</p>
+                <p className="text-3xl font-bold">14 meses</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Assumptions */}
+          <div className="mt-8 bg-white dark:bg-gray-800 rounded-xl p-6 border border-border">
+            <h4 className="text-lg font-bold text-foreground mb-4 flex items-center">
+              <span className="w-8 h-8 bg-nexus-primary/10 rounded-lg flex items-center justify-center mr-3">
+                📊
+              </span>
+              Premissas da Projeção
+            </h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                <p className="text-sm text-muted-foreground">
+                  <strong>Volume de entregas:</strong> 12.000 entregas/mês (atual B2B + expansão B2C), com crescimento de 15% após 6 meses
+                </p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                <p className="text-sm text-muted-foreground">
+                  <strong>Ticket médio:</strong> R$ 43,00 por entrega (mix B2B: R$ 55,00 e B2C: R$ 35,00)
+                </p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                <p className="text-sm text-muted-foreground">
+                  <strong>Equipe operacional:</strong> 50 entregadores + 5 supervisores com salários e encargos de R$ 180.000/mês
+                </p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                <p className="text-sm text-muted-foreground">
+                  <strong>Custos operacionais:</strong> Combustível (R$ 65.000), manutenção frota (R$ 25.000), aluguel CDs (R$ 15.700)
+                </p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                <p className="text-sm text-muted-foreground">
+                  <strong>Eficiência:</strong> Tecnologia reduz custos em 15% (combustível) e aumenta produtividade em 20% (entregas/veículo)
+                </p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                <p className="text-sm text-muted-foreground">
+                  <strong>Margem líquida:</strong> 19,2% alinhada ao padrão do setor de logística urbana last-mile no Brasil
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 

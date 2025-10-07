@@ -68,7 +68,7 @@ export default function Technology() {
   const saasAdvantages = [
     {
       service: 'Zero Servidores Locais (Cloud-First)',
-      description: 'Toda infraestrutura tecnológica (TMS, banco de dados, APIs, dashboards) hospedada na nuvem AWS/Azure pelo fornecedor, com redundância geográfica e alta disponibilidade garantida por SLA de 99.95%',
+      description: 'Toda infraestrutura tecnológica (aplicações, banco de dados, APIs, dashboards) hospedada na nuvem AWS/Azure pelo fornecedor, com redundância geográfica e alta disponibilidade garantida por SLA de 99.95%',
       benefit: 'Zero CAPEX em hardware de TI, apenas OPEX mensal previsível'
     },
     {
@@ -147,7 +147,7 @@ export default function Technology() {
           </p>
         </div>
 
-        {/* TMS Solutions */}
+        {/* Technology Platforms */}
         <div className="mb-20">
           <h3 className="text-2xl font-bold text-center mb-12 text-foreground">
             Plataformas Tecnológicas do Ecossistema

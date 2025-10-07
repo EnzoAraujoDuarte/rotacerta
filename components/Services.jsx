@@ -5,7 +5,7 @@ export default function Services() {
     {
       icon: AlertTriangle,
       title: 'Roteirização Manual Ineficiente',
-      description: 'Antes da implementação do TMS, o planejamento de rotas era feito manualmente em planilhas Excel, resultando em trajetos sub-otimizados, alto consumo de combustível (até 40% superior ao ideal) e atrasos frequentes nas entregas por não considerar trânsito em tempo real.',
+      description: 'O planejamento de rotas era feito manualmente em planilhas Excel, resultando em trajetos sub-otimizados, alto consumo de combustível (até 40% superior ao ideal) e atrasos frequentes nas entregas por não considerar trânsito em tempo real.',
       impact: ['Custos 40% maiores com combustível', 'Perda de 30% da produtividade', 'SLA de entrega abaixo de 75%']
     },
     {
@@ -76,7 +76,7 @@ export default function Services() {
               Problemas <span className="text-destructive">Críticos</span> Enfrentados
             </h3>
             <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Antes de implementar nossa solução tecnológica com TMS, enfrentávamos sérios desafios 
+              Antes de implementar nossa solução tecnológica, enfrentávamos sérios desafios 
               operacionais que impactavam drasticamente nossos custos, produtividade e satisfação dos clientes. 
               Estes problemas eram o dia a dia da operação logística tradicional:
             </p>

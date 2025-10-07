@@ -69,7 +69,7 @@ export default function Contact() {
     {
       icon: Calendar,
       title: 'Agendar Demonstração',
-      description: 'Veja nossa plataforma TMS e app do entregador em funcionamento',
+      description: 'Veja nossa plataforma e app do entregador em funcionamento',
       action: 'Agendar Demo',
       style: 'btn-hero'
     },
@@ -103,7 +103,7 @@ export default function Contact() {
     {
       name: 'Tecnologia',
       contact: 'ti@rotacerta.com.br',
-      focus: 'Integração de sistemas e plataforma TMS'
+      focus: 'Integração de sistemas e plataforma tecnológica'
     },
     {
       name: 'Atendimento ao Cliente',
@@ -236,7 +236,7 @@ export default function Contact() {
                   <label className="block text-sm font-medium text-foreground mb-2">Interesse</label>
                   <select className="w-full px-4 py-3 bg-background border border-input rounded-lg focus:border-nexus-primary focus:ring-2 focus:ring-nexus-primary/20 transition-colors duration-300">
                     <option>Entrega Last-Mile</option>
-                    <option>Implementação TMS</option>
+                    <option>Implementação Tecnológica</option>
                     <option>Consultoria Logística</option>
                     <option>Parceria Comercial</option>
                     <option>Outro</option>
