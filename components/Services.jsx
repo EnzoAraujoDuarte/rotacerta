@@ -1,4 +1,4 @@
-import { AlertTriangle, MapPin, FileText, MessageSquare, Package, Clock, CheckCircle } from 'lucide-react';
+import { AlertTriangle, MapPin, RotateCcw, Package2, Package, Clock, CheckCircle } from 'lucide-react';
 
 export default function Services() {
   const currentProblems = [
@@ -15,16 +15,16 @@ export default function Services() {
       impact: ['Mais de 200 ligações/dia perguntando "onde está?"', 'NPS baixo (45) por falta de transparência', 'Equipe de atendimento 3x maior que necessário']
     },
     {
-      icon: FileText,
-      title: 'Comprovação Manual em Papel',
-      description: 'As provas de entrega eram feitas com canhotos de papel físico assinados pelo cliente. Esses documentos frequentemente eram perdidos, danificados por chuva ou ilegíveis, atrasando o ciclo de faturamento em até 15 dias e gerando disputas sem evidências fotográficas.',
-      impact: ['15% de canhotos perdidos mensalmente', 'Ciclo de faturamento de 12-15 dias', 'Disputas sem evidência documental confiável']
+      icon: RotateCcw,
+      title: 'Alto Índice de Devoluções e Reentregas',
+      description: 'A taxa de devoluções por recusa, endereço incorreto ou ausência do responsável no recebimento está acima da média do setor, gerando custos operacionais elevados com reentregas, armazenagem temporária e perda de produtos perecíveis. Com a expansão planejada para B2C (entregas ao consumidor final), esse desafio tende a se intensificar, pois o mercado B2C apresenta taxas de ausência e recusa historicamente superiores ao B2B. A ausência de validação prévia de dados cadastrais e de comunicação proativa com os destinatários contribui para esse cenário.',
+      impact: ['Taxa de devolução acima da média do setor', 'Custos elevados com reentregas e armazenagem temporária', 'Perda de produtos perecíveis', 'Desafio intensificado na expansão B2C']
     },
     {
-      icon: MessageSquare,
-      title: 'Comunicação Fragmentada e Caótica',
-      description: 'Toda comunicação com a frota era via WhatsApp pessoal dos supervisores, criando múltiplos grupos desorganizados. Não havia registro centralizado de ocorrências (ausências, endereços errados, recusas), tornando impossível análises históricas e melhorias de processo.',
-      impact: ['Zero histórico estruturado de ocorrências', 'Supervisores gastando 4h/dia apenas em WhatsApp', 'Impossibilidade de análise de padrões e KPIs']
+      icon: Package2,
+      title: 'Gestão Ineficiente de Estoque e Previsão de Demanda (B2B)',
+      description: 'O planejamento de estoque e a previsão de demanda para os produtos das marcas líderes (Colgate, Kimberly Clark, etc.) são realizados com base em dados históricos limitados ou métodos pouco sofisticados. Isso resulta em excesso de estoque de itens de baixa saída (gerando custos de armazenagem e obsolescência) ou falta de estoque de produtos de alta demanda (perdendo vendas para farmácias, perfumarias e supermercados, e comprometendo a satisfação dos parceiros B2B).',
+      impact: ['Custos elevados de armazenagem devido ao excesso de produtos parados', 'Perda de vendas e receita quando não há produtos suficientes', 'Comprometimento do relacionamento B2B com farmácias e supermercados', 'Desperdício de capital imobilizado em estoque parado', 'Necessidade de promoções de queima de estoque, corroendo as margens']
     }
   ];
 
