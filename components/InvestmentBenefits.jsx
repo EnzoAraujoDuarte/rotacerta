@@ -45,7 +45,7 @@ export default function InvestmentBenefits() {
       items: ['Microsoft Intune (55 dispositivos): R$ 1.800', 'AWS IAM, MFA e Cognito: R$ 800', 'AWS Certificate Manager, KMS e Encryption: R$ 1.200', 'CloudWatch, CloudTrail e GuardDuty: R$ 1.500']
     },
     {
-      category: 'Equipe de TI Completa',
+      category: 'Equipe Completa',
       amount: 'R$ 100.200',
       period: '/mês',
       description: 'Equipe completa de tecnologia incluindo Engenheiro DevOps, Desenvolvedores Full-Stack, Analistas de Integrações, Suporte Técnico e demais profissionais para gestão, desenvolvimento, manutenção e evolução contínua da infraestrutura e aplicações.',
@@ -116,7 +116,7 @@ export default function InvestmentBenefits() {
     },
     {
       title: 'Equipe Interna Completa',
-      description: 'Equipe de TI própria (R$ 100,2 mil/mês) garante desenvolvimento contínuo, manutenção ágil e capacidade de resposta rápida às necessidades do negócio.',
+      description: 'Equipe própria (R$ 100,2 mil/mês) garante desenvolvimento contínuo, manutenção ágil e capacidade de resposta rápida às necessidades do negócio.',
       advantage: 'Autonomia tecnológica e inovação constante'
     }
   ];
