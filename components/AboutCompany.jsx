@@ -142,7 +142,7 @@ export default function AboutCompany() {
             <h3 className="text-xl font-bold mb-4 text-foreground">Atuação</h3>
             <p className="text-muted-foreground mb-2">B2B + Expansão B2C Last-Mile</p>
             <p className="text-sm text-muted-foreground">
-              Atacado para varejo + Expandindo para entregas ao consumidor final
+              Atacado + Expandindo para entregas ao consumidor final
             </p>
           </div>
 
