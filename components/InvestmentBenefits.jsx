@@ -136,30 +136,6 @@ export default function InvestmentBenefits() {
           </p>
         </div>
 
-        {/* Investment Summary */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          <div className="bg-gradient-to-r from-nexus-primary to-nexus-accent rounded-2xl p-8 text-white shadow-hero text-center">
-            <Smartphone className="w-12 h-12 mx-auto mb-4" />
-            <h3 className="text-3xl font-bold mb-2">R$ {initialInvestment.toLocaleString('pt-BR')}</h3>
-            <p className="text-lg text-white/90">Investimento Inicial</p>
-            <p className="text-sm text-white/80 mt-2">Hardware (uma vez)</p>
-          </div>
-
-          <div className="bg-gradient-to-r from-nexus-secondary to-nexus-primary rounded-2xl p-8 text-white shadow-hero text-center">
-            <DollarSign className="w-12 h-12 mx-auto mb-4" />
-            <h3 className="text-3xl font-bold mb-2">R$ {monthlyTotal.toLocaleString('pt-BR')}</h3>
-            <p className="text-lg text-white/90">Custo Mensal</p>
-            <p className="text-sm text-white/80 mt-2">OPEX recorrente</p>
-          </div>
-
-          <div className="bg-gradient-to-r from-nexus-accent to-nexus-secondary rounded-2xl p-8 text-white shadow-hero text-center">
-            <TrendingUp className="w-12 h-12 mx-auto mb-4" />
-            <h3 className="text-3xl font-bold mb-2">R$ {annualTotal.toLocaleString('pt-BR')}</h3>
-            <p className="text-lg text-white/90">Total Primeiro Ano</p>
-            <p className="text-sm text-white/80 mt-2">CAPEX + OPEX anual</p>
-          </div>
-        </div>
-
         {/* CAPEX vs OPEX Explanation */}
         <div className="mb-16 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950/20 dark:to-purple-950/20 rounded-2xl p-8 border-2 border-blue-200 dark:border-blue-800">
           <h3 className="text-2xl font-bold text-center mb-8 text-foreground">
