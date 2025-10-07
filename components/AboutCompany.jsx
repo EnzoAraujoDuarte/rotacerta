@@ -47,18 +47,32 @@ export default function AboutCompany() {
     <section id="sobre" className="min-h-screen py-20 section-gradient flex flex-col justify-center">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-12 md:mb-16 fade-in-up px-4">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6">
-            Sobre a <span className="text-gradient">Rota Certa Logtech</span>
-          </h2>
-          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            A Rota Certa Logtech é uma empresa atacadista B2B especializada na venda e distribuição de produtos 
-            de marcas líderes do mercado - como Colgate, Kimberly Clark, Reckitt, Ferrero, Huggies, Pampers 
-            e outras - para farmácias, perfumarias e supermercados. Estamos expandindo para o mercado B2C com 
-            foco em logística last-mile. Operamos através de uma plataforma de e-commerce Shopify, utilizamos 
-            o SAP ERP para gerenciar processos, e contamos com um aplicativo desenvolvido internamente 
-            (Flutter, backend TypeScript e banco PostgreSQL) para acompanhamento de entregas.
-          </p>
+        <div className="mb-12 md:mb-16 fade-in-up px-4">
+          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-12">
+            {/* Texto à esquerda */}
+            <div className="flex-1 text-center lg:text-left">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6">
+                Sobre a <span className="text-gradient">Rota Certa Logtech</span>
+              </h2>
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                A Rota Certa Logtech é uma empresa atacadista B2B especializada na venda e distribuição de produtos 
+                de marcas líderes do mercado - como Colgate, Kimberly Clark, Reckitt, Ferrero, Huggies, Pampers 
+                e outras - para farmácias, perfumarias e supermercados. Estamos expandindo para o mercado B2C com 
+                foco em logística last-mile. Operamos através de uma plataforma de e-commerce Shopify, utilizamos 
+                o SAP ERP para gerenciar processos, e contamos com um aplicativo desenvolvido internamente 
+                (Flutter, backend TypeScript e banco PostgreSQL) para acompanhamento de entregas.
+              </p>
+            </div>
+            
+            {/* Logo à direita */}
+            <div className="flex-shrink-0">
+              <img 
+                src="/rota-certa-logo.jpeg" 
+                alt="Logo Rota Certa Logtech" 
+                className="w-48 sm:w-56 md:w-64 lg:w-72 h-auto rounded-lg shadow-hero hover-lift"
+              />
+            </div>
+          </div>
         </div>
 
         {/* Mission Statement */}
