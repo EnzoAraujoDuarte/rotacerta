@@ -16,15 +16,15 @@ export default function Services() {
     },
     {
       icon: FileText,
-      title: 'Comprovação Manual em Papel',
-      description: 'As provas de entrega eram feitas com canhotos de papel físico assinados pelo cliente. Esses documentos frequentemente eram perdidos, danificados por chuva ou ilegíveis, atrasando o ciclo de faturamento em até 15 dias e gerando disputas sem evidências fotográficas.',
-      impact: ['15% de canhotos perdidos mensalmente', 'Ciclo de faturamento de 12-15 dias', 'Disputas sem evidência documental confiável']
+      title: 'Alto Índice de Devoluções e Reentregas',
+      description: 'A taxa de devoluções por recusa, endereço incorreto ou ausência do responsável no recebimento está acima da média do setor, gerando custos operacionais elevados com reentregas, armazenagem temporária e perda de produtos perecíveis. Com a expansão planejada para B2C (entregas ao consumidor final), esse desafio tende a se intensificar, pois o mercado B2C apresenta taxas de ausência e recusa historicamente superiores ao B2B. A ausência de validação prévia de dados cadastrais e de comunicação proativa com os destinatários contribui para esse cenário.',
+      impact: ['Taxa de devolução 35% acima da média do setor', 'Custos com reentregas impactam margem operacional em 8%', 'Perda de produtos perecíveis por múltiplas tentativas']
     },
     {
       icon: MessageSquare,
-      title: 'Comunicação Fragmentada e Caótica',
-      description: 'Toda comunicação com a frota era via WhatsApp pessoal dos supervisores, criando múltiplos grupos desorganizados. Não havia registro centralizado de ocorrências (ausências, endereços errados, recusas), tornando impossível análises históricas e melhorias de processo.',
-      impact: ['Zero histórico estruturado de ocorrências', 'Supervisores gastando 4h/dia apenas em WhatsApp', 'Impossibilidade de análise de padrões e KPIs']
+      title: 'Gestão Ineficiente de Estoque e Previsão de Demanda (B2B)',
+      description: 'O planejamento de estoque e a previsão de demanda para os produtos das marcas líderes (Colgate, Kimberly Clark, etc.) são realizados com base em dados históricos limitados ou métodos pouco sofisticados. Isso resulta em excesso de estoque de itens de baixa saída (gerando custos de armazenagem e obsolescência) ou falta de estoque de produtos de alta demanda (perdendo vendas para farmácias, perfumarias e supermercados, e comprometendo a satisfação dos parceiros B2B).',
+      impact: ['Custos elevados de armazenagem devido ao excesso de produtos parados', 'Perda de vendas e receita quando não há produtos suficientes', 'Comprometimento do relacionamento B2B por falta de produtos', 'Desperdício de capital imobilizado em estoque parado', 'Necessidade de promoções de queima de estoque corroendo margens']
     }
   ];
 
@@ -114,17 +114,6 @@ export default function Services() {
             })}
           </div>
           
-          {/* Transition Section */}
-          <div className="mt-12 text-center">
-            <div className="inline-block px-8 py-4 bg-gradient-to-r from-green-500/10 to-green-600/10 border-2 border-green-500/30 rounded-xl">
-              <p className="text-sm md:text-base text-foreground font-semibold mb-2">
-                ✅ <span className="text-green-600">SOLUÇÃO IMPLEMENTADA COM SUCESSO</span>
-              </p>
-              <p className="text-xs md:text-sm text-muted-foreground">
-                Todos estes problemas foram eliminados com a implementação do TMS drivin/Lincros
-              </p>
-            </div>
-          </div>
         </div>
 
         {/* Services Offered */}
