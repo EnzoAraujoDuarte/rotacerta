@@ -5,21 +5,21 @@ export default function InvestmentBenefits() {
     {
       category: 'Desenvolvimento App Flutter',
       amount: 'R$ 120.000',
-      period: '(investimento único)',
+      period: '(investimento)',
       description: 'Desenvolvimento e evolução do aplicativo Flutter com roteirização por IA, captura digital de comprovantes (foto + assinatura), integração com backend TypeScript e banco PostgreSQL, além de funcionalidades de rastreamento em tempo real.',
       items: ['Roteirização com IA/ML integrada', 'Captura digital: foto + assinatura', 'Interface intuitiva para entregadores', 'Dashboard de gestão em tempo real', 'Integração com backend TypeScript + PostgreSQL']
     },
     {
       category: 'Desenvolvimento de APIs de Integração',
       amount: 'R$ 80.000',
-      period: '(investimento único)',
+      period: '(investimento)',
       description: 'Desenvolvimento de APIs REST para integração completa entre Shopify (e-commerce), SAP ERP (gestão empresarial) e aplicativo interno Flutter, garantindo sincronização automática de pedidos, estoque e entregas.',
       items: ['API Shopify ↔ SAP ERP', 'API SAP ↔ App Flutter', 'API Shopify ↔ App Flutter', 'Webhooks e sincronização em tempo real', 'Documentação técnica completa']
     },
     {
       category: 'Infraestrutura AWS e Smartphones',
       amount: 'R$ 70.000',
-      period: '(investimento único)',
+      period: '(investimento)',
       description: 'Migração e configuração da infraestrutura AWS (servidores, banco PostgreSQL, storage, CDN) e aquisição de 55 smartphones corporativos para entregadores e gestores, além da implementação de ferramentas de segurança e MDM.',
       items: ['Migração e setup AWS (R$ 35.000)', 'Aquisição de 55 smartphones (R$ 35.000)', 'Implementação segurança e MDM (R$ 15.000)', 'Configuração backup e redundância']
     },
