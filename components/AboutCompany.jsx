@@ -17,15 +17,15 @@ export default function AboutCompany() {
     ],
     analysts: [
       { name: "Analista de Operações", icon: Clipboard, color: "from-teal-600 to-teal-500", count: 4 },
-      { name: "Analista de TI", icon: Database, color: "from-teal-600 to-teal-500", count: 3 },
-      { name: "Analista Comercial", icon: TrendingUp, color: "from-teal-600 to-teal-500", count: 3 },
+      { name: "Analista de TI", icon: Database, color: "from-teal-600 to-teal-500", count: 5 },
+      { name: "Analista Comercial", icon: TrendingUp, color: "from-teal-600 to-teal-500", count: 1 },
       { name: "Analista Financeiro", icon: Briefcase, color: "from-teal-600 to-teal-500", count: 2 },
       { name: "Analista de RH", icon: UserCheck, color: "from-teal-600 to-teal-500", count: 2 }
     ],
     assistants: [
       { name: "Assistente de Operações", icon: Package, color: "from-cyan-600 to-cyan-500", count: 3 },
-      { name: "Assistente de TI", icon: HeadphonesIcon, color: "from-cyan-600 to-cyan-500", count: 2 },
-      { name: "Assistente Comercial", icon: Users, color: "from-cyan-600 to-cyan-500", count: 2 },
+      { name: "Assistente de TI", icon: HeadphonesIcon, color: "from-cyan-600 to-cyan-500", count: 3 },
+      { name: "Assistente Comercial", icon: Users, color: "from-cyan-600 to-cyan-500", count: 1 },
       { name: "Assistente Financeiro", icon: Clipboard, color: "from-cyan-600 to-cyan-500", count: 2 },
       { name: "Assistente de RH", icon: UserCheck, color: "from-cyan-600 to-cyan-500", count: 1 }
     ],
