@@ -295,29 +295,6 @@ export default function InvestmentBenefits() {
           </div>
         </div>
 
-        {/* Final CTA */}
-        <div className="text-center">
-          <div className="bg-gradient-to-r from-nexus-secondary via-nexus-primary to-nexus-accent rounded-2xl p-8 text-white shadow-hero">
-            <BarChart3 className="w-16 h-16 mx-auto mb-6" />
-            <h3 className="text-3xl font-bold mb-4">
-              Transformação Comprovada com Resultados Reais
-            </h3>
-            <p className="text-xl text-white/90 mb-6 max-w-3xl mx-auto leading-relaxed">
-              Este plano de investimento oferece um caminho claro para modernizar a operação com 
-              desenvolvimento próprio do aplicativo Flutter com IA, APIs robustas de integração e 
-              infraestrutura AWS escalável, construindo uma base tecnológica sólida para crescimento 
-              futuro e expansão para B2C com logística last-mile.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-nexus-primary font-semibold px-8 py-4 rounded-lg hover:bg-white/90 transition-colors duration-300 shadow-lg">
-                Baixar Plano Detalhado (PDF)
-              </button>
-              <button className="border-2 border-white text-white font-semibold px-8 py-4 rounded-lg hover:bg-white hover:text-nexus-primary transition-colors duration-300">
-                Solicitar Apresentação Executiva
-              </button>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

@@ -1,6 +1,49 @@
-import { Mail, Phone, MapPin, Calendar, Download, MessageSquare } from 'lucide-react';
+'use client';
+
+import { useState } from 'react';
+import { Mail, Phone, MapPin, Calendar, Download, MessageSquare, X, Send, Bot, User } from 'lucide-react';
 
 export default function Contact() {
+  const [isChatOpen, setIsChatOpen] = useState(false);
+  const [messages, setMessages] = useState([
+    {
+      id: '1',
+      text: 'Olá! Sou o assistente virtual da Rota Certa Logtech. Como posso ajudá-lo hoje?',
+      sender: 'bot',
+      timestamp: new Date()
+    }
+  ]);
+  const [inputMessage, setInputMessage] = useState('');
+
+  const sendMessage = () => {
+    if (!inputMessage.trim()) return;
+
+    const userMessage = {
+      id: Date.now().toString(),
+      text: inputMessage,
+      sender: 'user',
+      timestamp: new Date()
+    };
+
+    setMessages(prev => [...prev, userMessage]);
+    setInputMessage('');
+
+    setTimeout(() => {
+      const botResponse = {
+        id: (Date.now() + 1).toString(),
+        text: 'Obrigado pela sua mensagem! Esta é apenas uma demonstração do chat. Em breve, nosso assistente estará totalmente funcional para ajudá-lo com informações sobre entregas, serviços e muito mais.',
+        sender: 'bot',
+        timestamp: new Date()
+      };
+      setMessages(prev => [...prev, botResponse]);
+    }, 1000);
+  };
+
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      sendMessage();
+    }
+  };
   const contactMethods = [
     {
       icon: Mail,
@@ -95,7 +138,14 @@ export default function Contact() {
                   </div>
                   <h3 className="text-xl font-bold text-foreground mb-4">{option.title}</h3>
                   <p className="text-muted-foreground mb-6 leading-relaxed">{option.description}</p>
-                  <button className={`${option.style} w-full`}>
+                  <button 
+                    className={`${option.style} w-full`}
+                    onClick={() => {
+                      if (option.action === 'Iniciar Conversa') {
+                        setIsChatOpen(true);
+                      }
+                    }}
+                  >
                     {option.action}
                   </button>
                 </div>
@@ -220,6 +270,87 @@ export default function Contact() {
           </div>
         </div>
       </div>
+
+      {/* Chat Window */}
+      {isChatOpen && (
+        <div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center p-4">
+          <div className="w-full max-w-md h-full max-h-[600px] bg-card rounded-2xl shadow-2xl border border-border flex flex-col">
+            {/* Header */}
+            <div className="bg-gradient-to-r from-nexus-primary to-nexus-accent text-white rounded-t-2xl p-4">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <Bot className="w-5 h-5" />
+                  <span className="text-sm font-medium">Assistente Rota Certa</span>
+                </div>
+                <button
+                  onClick={() => setIsChatOpen(false)}
+                  className="text-white hover:bg-white/20 p-1 rounded transition-colors"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              </div>
+              <div className="flex items-center gap-2 mt-1">
+                <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                <span className="text-xs opacity-90">Online</span>
+              </div>
+            </div>
+
+            {/* Messages Area */}
+            <div className="flex-1 overflow-y-auto p-4 space-y-3 bg-gray-50 dark:bg-gray-900">
+              {messages.map((message) => (
+                <div
+                  key={message.id}
+                  className={`flex ${message.sender === 'user' ? 'justify-end' : 'justify-start'}`}
+                >
+                  <div
+                    className={`max-w-[75%] rounded-lg p-3 ${
+                      message.sender === 'user'
+                        ? 'bg-nexus-primary text-white'
+                        : 'bg-white dark:bg-gray-800 border border-border text-foreground'
+                    }`}
+                  >
+                    <div className="flex items-start gap-2">
+                      {message.sender === 'bot' && (
+                        <Bot className="w-4 h-4 mt-0.5 text-nexus-primary flex-shrink-0" />
+                      )}
+                      {message.sender === 'user' && (
+                        <User className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                      )}
+                      <p className="text-sm leading-relaxed">{message.text}</p>
+                    </div>
+                    <span className="text-xs opacity-70 mt-1 block">
+                      {message.timestamp.toLocaleTimeString('pt-BR', {
+                        hour: '2-digit',
+                        minute: '2-digit'
+                      })}
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Input Area */}
+            <div className="p-4 bg-card border-t border-border rounded-b-2xl">
+              <div className="flex gap-2">
+                <input
+                  type="text"
+                  placeholder="Digite sua mensagem..."
+                  value={inputMessage}
+                  onChange={(e) => setInputMessage(e.target.value)}
+                  onKeyPress={handleKeyPress}
+                  className="flex-1 px-4 py-3 bg-background border border-input rounded-lg focus:border-nexus-primary focus:ring-2 focus:ring-nexus-primary/20 transition-colors duration-300 text-sm"
+                />
+                <button
+                  onClick={sendMessage}
+                  className="bg-gradient-to-r from-nexus-primary to-nexus-accent text-white p-3 rounded-lg hover:opacity-90 transition-opacity"
+                >
+                  <Send className="w-4 h-4" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

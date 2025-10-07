@@ -113,18 +113,6 @@ export default function Services() {
               );
             })}
           </div>
-          
-          {/* Transition Section */}
-          <div className="mt-12 text-center">
-            <div className="inline-block px-8 py-4 bg-gradient-to-r from-green-500/10 to-green-600/10 border-2 border-green-500/30 rounded-xl">
-              <p className="text-sm md:text-base text-foreground font-semibold mb-2">
-                ✅ <span className="text-green-600">SOLUÇÃO IMPLEMENTADA COM SUCESSO</span>
-              </p>
-              <p className="text-xs md:text-sm text-muted-foreground">
-                Todos estes problemas foram eliminados com a implementação do TMS drivin/Lincros
-              </p>
-            </div>
-          </div>
         </div>
 
         {/* Services Offered */}
@@ -170,26 +158,6 @@ export default function Services() {
           </div>
         </div>
 
-        {/* CTA Section */}
-        <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-nexus-primary to-nexus-accent rounded-xl md:rounded-2xl p-6 md:p-8 text-white shadow-hero">
-            <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">
-              Pronto para transformar suas entregas?
-            </h3>
-            <p className="text-sm md:text-lg mb-6 text-white/90 max-w-2xl mx-auto leading-relaxed px-4">
-              Descubra como nossa solução tecnológica pode revolucionar sua operação logística, 
-              eliminar problemas críticos e reduzir custos operacionais em até 35%.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center px-4">
-              <button className="bg-white text-nexus-primary font-semibold px-6 md:px-8 py-3 rounded-lg hover:bg-white/90 transition-colors duration-300 text-sm md:text-base">
-                Agendar Demonstração
-              </button>
-              <button className="border-2 border-white text-white font-semibold px-6 md:px-8 py-3 rounded-lg hover:bg-white hover:text-nexus-primary transition-colors duration-300 text-sm md:text-base">
-                Falar com Especialista
-              </button>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

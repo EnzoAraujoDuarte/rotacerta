@@ -24,7 +24,7 @@ export default function Hero() {
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full mb-8 border border-white/20">
             <Shield className="w-4 h-4 mr-2" />
-            <span className="text-sm font-medium">Logística Last-Mile Inteligente</span>
+            <span className="text-sm font-medium">Logística Inteligente</span>
           </div>
 
           {/* Main Heading */}

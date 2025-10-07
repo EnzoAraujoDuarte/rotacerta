@@ -112,21 +112,24 @@ export default function Technology() {
   const securityPractices = [
     {
       icon: Shield,
-      title: 'Autenticação Segura',
-      description: 'Login com credenciais únicas e senha forte para cada entregador',
-      implementation: 'Integrado no app do entregador'
+      title: 'AWS IAM e MFA',
+      description: 'Gerenciamento de identidades e acessos com autenticação multi-fator (MFA) obrigatória para todos os usuários administrativos',
+      tools: ['AWS IAM', 'AWS Cognito', 'MFA Authenticator'],
+      implementation: 'Controle granular de permissões e políticas'
     },
     {
       icon: Lock,
-      title: 'Criptografia de Dados',
-      description: 'Todos os dados transmitidos e armazenados são criptografados',
-      implementation: 'TLS 1.3 e criptografia em repouso'
+      title: 'Criptografia em Trânsito e Repouso',
+      description: 'TLS 1.3 para comunicações HTTPS e AES-256 para dados armazenados no PostgreSQL RDS e S3',
+      tools: ['AWS Certificate Manager', 'AWS KMS', 'PostgreSQL RDS Encryption'],
+      implementation: 'Certificados SSL/TLS automáticos e chaves criptográficas gerenciadas'
     },
     {
       icon: Monitor,
-      title: 'Auditoria e Compliance',
-      description: 'Logs de acesso e conformidade com LGPD',
-      implementation: 'Relatórios automáticos de auditoria'
+      title: 'Monitoramento e Auditoria (LGPD)',
+      description: 'Logs centralizados de acesso, alertas de segurança em tempo real e relatórios de conformidade com LGPD',
+      tools: ['AWS CloudWatch', 'AWS CloudTrail', 'Amazon GuardDuty'],
+      implementation: 'Auditoria completa de ações e detecção de ameaças'
     }
   ];
 
@@ -338,14 +341,28 @@ export default function Technology() {
             {securityPractices.map((practice, index) => {
               const PracticeIcon = practice.icon;
               return (
-                <div key={index} className="text-center">
+                <div key={index} className="card-hover hover-lift">
                   <div className="w-16 h-16 bg-gradient-to-r from-nexus-primary to-nexus-accent rounded-xl flex items-center justify-center mx-auto mb-6">
                     <PracticeIcon className="w-8 h-8 text-white" />
                   </div>
-                  <h4 className="font-semibold text-foreground mb-2">{practice.title}</h4>
-                  <p className="text-sm text-muted-foreground mb-3">{practice.description}</p>
-                  <div className="p-3 bg-background rounded-lg border border-border">
-                    <p className="text-xs text-muted-foreground">{practice.implementation}</p>
+                  <h4 className="font-semibold text-foreground mb-3 text-center">{practice.title}</h4>
+                  <p className="text-sm text-muted-foreground mb-4 leading-relaxed text-center">{practice.description}</p>
+                  
+                  <div className="mb-4">
+                    <p className="text-xs font-semibold text-nexus-primary uppercase tracking-wider mb-3 text-center">Ferramentas:</p>
+                    <div className="space-y-2">
+                      {practice.tools.map((tool, idx) => (
+                        <div key={idx} className="flex items-center justify-center">
+                          <div className="w-2 h-2 bg-nexus-primary rounded-full mr-2"></div>
+                          <span className="text-xs text-muted-foreground">{tool}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  
+                  <div className="p-3 bg-nexus-primary/5 rounded-lg border border-nexus-primary/20">
+                    <p className="text-xs text-nexus-primary font-semibold mb-1 text-center">Implementação:</p>
+                    <p className="text-xs text-muted-foreground text-center">{practice.implementation}</p>
                   </div>
                 </div>
               );
