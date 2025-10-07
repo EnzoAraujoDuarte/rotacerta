@@ -113,20 +113,20 @@ export default function Technology() {
     {
       icon: Shield,
       title: 'Autenticação Segura',
-      description: 'Login com credenciais únicas e senha forte para cada entregador',
-      implementation: 'Integrado no app do entregador'
+      description: 'Autenticação multifator (MFA) e gerenciamento de identidade para proteger acessos ao sistema',
+      implementation: 'AWS IAM + AWS Cognito (MFA, SSO, controle de acesso granular)'
     },
     {
       icon: Lock,
       title: 'Criptografia de Dados',
-      description: 'Todos os dados transmitidos e armazenados são criptografados',
-      implementation: 'TLS 1.3 e criptografia em repouso'
+      description: 'Criptografia de ponta a ponta para dados em trânsito e em repouso, garantindo confidencialidade',
+      implementation: 'AWS KMS (Key Management Service) + TLS 1.3 + PostgreSQL Transparent Data Encryption'
     },
     {
       icon: Monitor,
       title: 'Auditoria e Compliance',
-      description: 'Logs de acesso e conformidade com LGPD',
-      implementation: 'Relatórios automáticos de auditoria'
+      description: 'Monitoramento contínuo, detecção de ameaças e auditoria de conformidade com LGPD',
+      implementation: 'AWS CloudTrail + AWS CloudWatch + Amazon GuardDuty (detecção de ameaças)'
     }
   ];
 
