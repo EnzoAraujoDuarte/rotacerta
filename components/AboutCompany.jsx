@@ -95,7 +95,7 @@ export default function AboutCompany() {
                 <Target className="w-6 h-6 text-nexus-primary mt-1" />
                 <div>
                   <h4 className="font-semibold text-foreground">Eficiência Operacional</h4>
-                  <p className="text-muted-foreground">Roteirização inteligente por IA integrada ao SAP ERP que otimiza trajetos, reduz custos e aumenta a produtividade.</p>
+                  <p className="text-muted-foreground">Roteirização inteligente integrada ao SAP ERP que otimiza trajetos, reduz custos e aumenta a produtividade.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
