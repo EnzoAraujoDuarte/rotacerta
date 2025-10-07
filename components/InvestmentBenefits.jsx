@@ -106,7 +106,7 @@ export default function InvestmentBenefits() {
   const justifications = [
     {
       title: 'CAPEX (Capital Expenditure)',
-      description: 'Investimento inicial único de R$ 285 mil para desenvolvimento do app Flutter, APIs, infraestrutura AWS e aquisição de 55 smartphones. Gera ativo de longo prazo e propriedade intelectual.',
+      description: 'Investimento inicial de R$ 285 mil para desenvolvimento do app Flutter, APIs, infraestrutura AWS e aquisição de 55 smartphones. Gera ativo de longo prazo e propriedade intelectual.',
       advantage: 'Controle total sobre tecnologia e evolução própria'
     },
     {
