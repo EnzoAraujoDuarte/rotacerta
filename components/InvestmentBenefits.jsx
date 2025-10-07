@@ -18,7 +18,7 @@ export default function InvestmentBenefits() {
     },
     {
       category: 'Infraestrutura AWS e Smartphones',
-      amount: 'R$ 75.000',
+      amount: 'R$ 85.000',
       period: '(investimento)',
       description: 'Migração e configuração da infraestrutura AWS (servidores, banco PostgreSQL, storage, CDN) e aquisição de 55 smartphones corporativos para entregadores e gestores, além da implementação de ferramentas de segurança e MDM.',
       items: ['Migração e setup AWS (R$ 35.000)', 'Aquisição de 55 smartphones (R$ 35.000)', 'Implementação segurança e MDM (R$ 15.000)', 'Configuração backup e redundância']
