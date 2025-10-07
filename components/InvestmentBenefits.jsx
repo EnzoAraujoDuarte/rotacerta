@@ -368,7 +368,7 @@ export default function InvestmentBenefits() {
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
                 <p className="text-sm text-muted-foreground">
-                  <strong>Equipe operacional:</strong> 50 entregadores + 5 supervisores com salários e encargos de R$ 180.000/mês
+                  <strong>Equipe operacional:</strong> 50 entregadores + 5 supervisores com salários e encargos.
                 </p>
               </div>
               <div className="flex items-start space-x-3">
@@ -386,7 +386,7 @@ export default function InvestmentBenefits() {
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
                 <p className="text-sm text-muted-foreground">
-                  <strong>Margem líquida:</strong> 19,2% alinhada ao padrão do setor de logística urbana last-mile no Brasil
+                  <strong>Margem líquida:</strong> 19,2% alinhada ao padrão do setor no Brasil
                 </p>
               </div>
             </div>
