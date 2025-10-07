@@ -201,7 +201,7 @@ export default function Contact() {
         <div className="max-w-2xl mx-auto">
           <div className="bg-card rounded-2xl p-8 shadow-card border border-border">
             <h3 className="text-2xl font-bold text-center text-foreground mb-6">
-              Envie uma Mensagem Rápida
+              Envie uma Mensagem
             </h3>
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
