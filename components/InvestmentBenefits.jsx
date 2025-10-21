@@ -182,7 +182,7 @@ export default function InvestmentBenefits() {
         {/* Investment Breakdown */}
         <div className="mb-20">
           <h3 className="text-3xl font-bold text-center mb-12 text-foreground">
-            Detalhamento dos Investimentos
+            Detalhamento dos Investimentos Tecnologicos
           </h3>
           <div className="space-y-8">
             {investmentData.map((investment, index) => (
