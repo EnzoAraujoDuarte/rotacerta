@@ -3,6 +3,13 @@ import { DollarSign, TrendingUp, Target, Shield, Smartphone, Zap, BarChart3 } fr
 export default function InvestmentBenefits() {
   const investmentData = [
     {
+      category: 'Implantação SAP ERP HANA Cloud',
+      amount: 'R$ 500.000',
+      period: '(investimento)',
+      description: 'Implantação completa do SAP ERP HANA Cloud e tecnologias SAP, incluindo configuração, customização, migração de dados, integrações e treinamento. Sistema de gestão empresarial de última geração com processamento in-memory e analytics em tempo real.',
+      items: ['Configuração e customização SAP HANA Cloud', 'Migração de dados e integração com sistemas legados', 'Módulos: FI, CO, SD, MM, PP, QM', 'Analytics e Business Intelligence integrados', 'Treinamento completo para equipe']
+    },
+    {
       category: 'Desenvolvimento App Flutter',
       amount: 'R$ 120.000',
       period: '(investimento)',
