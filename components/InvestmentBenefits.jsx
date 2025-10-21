@@ -346,7 +346,7 @@ export default function InvestmentBenefits() {
               </div>
               <div>
                 <p className="text-white/80 text-sm uppercase tracking-wider mb-2">ROI do Investimento</p>
-                <p className="text-3xl font-bold">14 meses</p>
+                <p className="text-3xl font-bold">8 meses</p>
               </div>
             </div>
           </div>
