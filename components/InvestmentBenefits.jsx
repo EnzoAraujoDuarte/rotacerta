@@ -3,6 +3,13 @@ import { DollarSign, TrendingUp, Target, Shield, Smartphone, Zap, BarChart3 } fr
 export default function InvestmentBenefits() {
   const investmentData = [
     {
+      category: 'Implantação SAP ERP HANA Cloud',
+      amount: 'R$ 500.000',
+      period: '(investimento)',
+      description: 'Implantação completa do SAP ERP HANA Cloud e tecnologias SAP, incluindo configuração, customização, migração de dados, integrações e treinamento. Sistema de gestão empresarial de última geração com processamento in-memory e analytics em tempo real.',
+      items: ['Configuração e customização SAP HANA Cloud', 'Migração de dados e integração com sistemas legados', 'Módulos: FI, CO, SD, MM, PP, QM', 'Analytics e Business Intelligence integrados', 'Treinamento completo para equipe']
+    },
+    {
       category: 'Desenvolvimento App Flutter',
       amount: 'R$ 120.000',
       period: '(investimento)',
@@ -67,7 +74,7 @@ export default function InvestmentBenefits() {
     return sum;
   }, 0);
 
-  const initialInvestment = 285000;
+  const initialInvestment = 785000; // Atualizado para incluir SAP ERP HANA Cloud (R$ 500.000)
   const sapAnnual = 180000;
   const annualTotal = (monthlyTotal * 12) + initialInvestment + sapAnnual;
 
@@ -106,7 +113,7 @@ export default function InvestmentBenefits() {
   const justifications = [
     {
       title: 'CAPEX (Capital Expenditure)',
-      description: 'Investimento inicial de R$ 285 mil para desenvolvimento do app Flutter, APIs, infraestrutura AWS e aquisição de 55 smartphones. Gera ativo de longo prazo e propriedade intelectual.',
+      description: 'Investimento inicial de R$ 785 mil para implantação do SAP ERP HANA Cloud, desenvolvimento do app Flutter, APIs, infraestrutura AWS e aquisição de 55 smartphones. Gera ativo de longo prazo e propriedade intelectual.',
       advantage: 'Controle total sobre tecnologia e evolução própria'
     },
     {
@@ -130,9 +137,9 @@ export default function InvestmentBenefits() {
             Investimentos e <span className="text-gradient">Benefícios</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Investimento estratégico com CAPEX inicial de R$ 285 mil e OPEX mensal de R$ 119,3 mil, 
-            focado no desenvolvimento do aplicativo Flutter próprio com IA, APIs de integração 
-            (Shopify-SAP-App), infraestrutura AWS escalável e equipe completa de TI.
+            Investimento estratégico com CAPEX inicial de R$ 785 mil e OPEX mensal de R$ 119,3 mil, 
+            focado na implantação do SAP ERP HANA Cloud, desenvolvimento do aplicativo Flutter próprio com IA, 
+            APIs de integração (Shopify-SAP-App), infraestrutura AWS escalável e equipe completa de TI.
           </p>
         </div>
 
@@ -151,7 +158,7 @@ export default function InvestmentBenefits() {
               </p>
               <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
                 <p className="text-sm font-semibold text-blue-700 dark:text-blue-300">Neste projeto:</p>
-                <p className="text-2xl font-bold text-blue-600 dark:text-blue-400">R$ 285.000</p>
+                <p className="text-2xl font-bold text-blue-600 dark:text-blue-400">R$ 785.000</p>
                 <p className="text-xs text-muted-foreground mt-1">Investimento único ou pontual</p>
               </div>
             </div>
