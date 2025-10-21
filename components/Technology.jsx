@@ -218,7 +218,7 @@ export default function Technology() {
 
           {/* Mobile Infrastructure */}
           <div className="mt-12">
-            <h4 className="text-xl font-bold text-center mb-8 text-foreground">Infraestrutura Sugerida</h4>
+            <h4 className="text-xl font-bold text-center mb-8 text-foreground">Infraestrutura</h4>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {mobileInfrastructure.map((item, index) => {
                 const ItemIcon = item.icon;
